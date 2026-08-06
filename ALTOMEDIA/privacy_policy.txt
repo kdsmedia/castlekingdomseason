@@ -1,0 +1,299 @@
+PRIVACY POLICY — CASTLE KINGDOM SEASON
+Published by: ALTOMEDIA
+Contact: altomediaindonesia@gmail.com
+Package Name: com.altomedia.castlekingdomseason
+Last Updated: August 7, 2026
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. INTRODUCTION
+
+Welcome to Castle Kingdom Season ("the Game"), a mobile tower defense game developed and published by ALTOMEDIA ("we", "us", or "our"). This Privacy Policy describes in detail how we collect, use, disclose, store, and protect information when you access, install, or play Castle Kingdom Season on your Android device through Google Play.
+
+By downloading, installing, or using Castle Kingdom Season, you acknowledge that you have read, understood, and agree to the practices described in this Privacy Policy. If you do not agree to the terms of this Privacy Policy, please discontinue use of the Game immediately and uninstall it from your device.
+
+This Privacy Policy applies to all users of Castle Kingdom Season worldwide, including users in the European Union, the United States, Indonesia, and all other jurisdictions. Where local laws impose additional requirements, we comply with those requirements to the extent they apply to us.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2. INFORMATION WE COLLECT
+
+2.1 Information Collected Automatically
+
+When you play Castle Kingdom Season, certain information is collected automatically by the Game and by third-party SDKs integrated into the Game. This information includes:
+
+a) Device Information
+   - Device model, manufacturer, and hardware specifications
+   - Operating system version and Android API level
+   - Unique device identifiers (Android Advertising ID / GAID)
+   - Device language and locale settings
+   - Screen resolution and display density
+   - Available storage and memory (for performance optimization)
+   - Network connection type (Wi-Fi, mobile data)
+
+b) Gameplay Data
+   - Game progress, levels completed, and scores
+   - In-game currency earned and spent
+   - Session duration, play frequency, and session timestamps
+   - Game events (level start, level complete, level failed, upgrades purchased)
+   - Features and menus accessed within the Game
+   - In-app purchase history (amount, item type, timestamp)
+
+c) Performance and Crash Data
+   - Application errors, crash reports, and exception logs
+   - Frame rate, load times, and performance metrics
+   - SDK version and build information
+
+d) Advertising Data
+   - Ad impressions, clicks, and completions
+   - Ad interaction data collected by advertising partners
+   - Advertising identifier (GAID) for ad personalization purposes
+
+2.2 Information You Provide Voluntarily
+
+We do not require registration or the creation of an account to play Castle Kingdom Season. However, you may voluntarily provide:
+   - Customer support inquiries submitted via email to altomediaindonesia@gmail.com
+   - Feedback or bug reports submitted through in-game mechanisms or email
+
+2.3 Information We Do NOT Collect
+
+We do NOT collect:
+   - Your real name, home address, or national identification numbers
+   - Precise GPS location data
+   - Camera or microphone input
+   - Contacts, call logs, or messages from your device
+   - Photos or files stored on your device
+   - Biometric data of any kind
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+3. HOW WE USE COLLECTED INFORMATION
+
+We use the information we collect for the following purposes:
+
+3.1 Game Operation and Functionality
+   - To provide, maintain, and improve the Game
+   - To save your game progress and sync data across sessions
+   - To ensure the Game functions correctly on your specific device
+
+3.2 Analytics and Performance Improvement
+   - To understand how players interact with the Game
+   - To identify and fix bugs, crashes, and performance issues
+   - To measure the effectiveness of game features and content
+   - To make data-driven decisions about future updates and content
+
+3.3 Advertising
+   - To display advertisements within the Game (banner ads, interstitial ads, and rewarded video ads)
+   - To measure advertising effectiveness and campaign performance
+   - To provide personalized or context-based advertisements through our advertising partners, including Google AdMob and Unity Ads
+   - To comply with advertising partner requirements and policies
+
+3.4 Customer Support
+   - To respond to your inquiries, questions, and support requests
+   - To diagnose and resolve technical issues you report
+
+3.5 Legal Compliance
+   - To comply with applicable laws, regulations, and legal obligations
+   - To enforce our Terms of Service and protect our legal rights
+   - To prevent fraud, cheating, and other unauthorized activities
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+4. THIRD-PARTY SERVICES AND SDKs
+
+Castle Kingdom Season integrates the following third-party services and SDKs, each of which may independently collect and process data according to their own privacy policies:
+
+4.1 Google AdMob
+   - Purpose: Display advertisements (banner, interstitial, rewarded video)
+   - Data Collected: Advertising ID, device info, app usage data, IP address
+   - Privacy Policy: https://policies.google.com/privacy
+   - Opt-Out: You can opt out of personalized ads in your Android device settings under Google > Ads > Opt out of Ads Personalization
+
+4.2 Google Firebase
+   - Purpose: Analytics, crash reporting (Firebase Crashlytics), remote configuration, and dynamic links
+   - Data Collected: Anonymous usage events, crash reports, device identifiers
+   - Privacy Policy: https://firebase.google.com/support/privacy
+   - Data Retention: Firebase Analytics data is retained for 14 months by default
+
+4.3 Unity Ads
+   - Purpose: Rewarded video advertisements
+   - Data Collected: Advertising ID, device info, ad interaction data
+   - Privacy Policy: https://unity.com/legal/privacy-policy
+   - Opt-Out: https://unity.com/legal/privacy-policy#your-privacy-rights
+
+4.4 Google Play Services
+   - Purpose: App distribution, licensing, and Play Games integration
+   - Data Collected: Google account identifiers (if Play Games is used), device info
+   - Privacy Policy: https://policies.google.com/privacy
+
+We do not control and are not responsible for the data practices of these third-party services. We encourage you to review their respective privacy policies for more information.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+5. DATA SHARING AND DISCLOSURE
+
+We do not sell, rent, or trade your personal information to third parties for their marketing purposes. We may share data in the following limited circumstances:
+
+5.1 Third-Party Service Providers
+We share data with the third-party SDKs listed in Section 4 solely for the purposes described therein (advertising, analytics, crash reporting). These parties are authorized to use your data only as necessary to provide these services to us.
+
+5.2 Business Transfers
+If ALTOMEDIA is involved in a merger, acquisition, sale of assets, or bankruptcy proceeding, your information may be transferred as part of that transaction. We will notify you of any such change via in-game notice or by updating this Privacy Policy.
+
+5.3 Legal Requirements
+We may disclose your information if we are required to do so by law, court order, governmental regulation, or to:
+   - Comply with a legal obligation or lawful request from public authorities
+   - Protect and defend the rights or property of ALTOMEDIA
+   - Prevent or investigate possible wrongdoing in connection with the Game
+   - Protect the personal safety of users or the public
+
+5.4 Aggregate and Anonymized Data
+We may share aggregated, non-personally identifiable statistical data about our users (e.g., "70% of players complete Level 5") with partners, investors, or the public for research or business purposes. Such data cannot be used to identify you individually.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+6. DATA RETENTION
+
+We retain data for as long as necessary to fulfill the purposes described in this Privacy Policy, unless a longer retention period is required by law:
+
+- Gameplay progress data: Retained for as long as the Game is installed or as long as you have an active account
+- Analytics data: Retained in Firebase for 14 months; anonymized aggregate data may be retained indefinitely
+- Crash reports: Retained for 90 days in Firebase Crashlytics
+- Customer support emails: Retained for up to 3 years from the date of last interaction
+- Advertising data: Subject to the retention policies of Google AdMob and Unity Ads
+
+When data is no longer needed, we take reasonable steps to ensure it is deleted or anonymized.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+7. CHILDREN'S PRIVACY
+
+Castle Kingdom Season is rated for users aged 7 and above (Everyone / Everyone 10+). We do not knowingly collect personal information from children under the age of 13 (or under the age of 16 in the European Economic Area). The Game does not display behavioral advertising to users who are identified or known to be under the age of 13, consistent with Google Play's Families Policy requirements.
+
+If you are a parent or guardian and you believe your child has provided personal information to us without your consent, please contact us immediately at altomediaindonesia@gmail.com. If we become aware that we have inadvertently collected personal information from a child under the applicable age threshold without proper consent, we will take prompt steps to delete such information.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+8. ADVERTISING AND TRACKING
+
+8.1 Types of Ads
+Castle Kingdom Season displays the following types of advertisements:
+   - Banner ads: Small ads displayed at the top or bottom of the screen
+   - Interstitial ads: Full-screen ads displayed between game sessions or level transitions
+   - Rewarded video ads: Opt-in video ads that players can watch voluntarily in exchange for in-game rewards (e.g., coins, gems, extra lives)
+
+8.2 Ad Personalization
+By default, ad networks may use your advertising identifier (Android Advertising ID) to show you personalized advertisements based on your interests and prior activity across apps and websites. You may opt out of personalized advertising through your device settings:
+   - Go to Settings > Google > Ads > Opt out of Ads Personalization
+
+8.3 Advertising ID Reset
+You can reset your Android Advertising ID at any time in your device settings under Settings > Google > Ads > Reset advertising ID. This will break the link between your previous advertising profile and your device.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+9. SECURITY
+
+We implement reasonable administrative, technical, and physical safeguards designed to protect the information we collect from unauthorized access, use, alteration, and destruction. These measures include:
+
+- Data transmitted between the Game and our servers or third-party services is encrypted using industry-standard protocols (TLS/HTTPS)
+- Access to user data within our systems is restricted to authorized personnel only
+- Third-party SDKs are vetted for security and compliance with our policies
+- We promptly investigate and respond to security incidents
+
+However, no method of transmission over the Internet or method of electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your information, we cannot guarantee absolute security. You use the Game at your own risk.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+10. YOUR RIGHTS AND CHOICES
+
+Depending on your jurisdiction, you may have the following rights with respect to your personal data:
+
+10.1 Access and Portability
+You have the right to request a copy of the personal data we hold about you in a structured, machine-readable format.
+
+10.2 Correction
+You have the right to request that we correct any inaccurate or incomplete personal data we hold about you.
+
+10.3 Deletion ("Right to be Forgotten")
+You have the right to request deletion of your personal data, subject to certain exceptions (e.g., data we are required to retain by law). To request deletion, contact us at altomediaindonesia@gmail.com.
+
+10.4 Restriction and Objection
+You may have the right to restrict or object to certain processing of your personal data, including processing for direct marketing purposes.
+
+10.5 Opt-Out of Analytics
+You may opt out of Firebase Analytics data collection by adjusting your device's advertising settings or by using the Firebase Analytics opt-out option where available in the Game settings.
+
+10.6 Opt-Out of Personalized Advertising
+As described in Section 8.2, you may opt out of personalized advertising at the device level.
+
+10.7 Exercising Your Rights
+To exercise any of the above rights, please contact us at: altomediaindonesia@gmail.com. We will respond to your request within 30 days. We may ask you to verify your identity before fulfilling your request.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+11. INTERNATIONAL DATA TRANSFERS
+
+ALTOMEDIA is based in Indonesia. If you are accessing Castle Kingdom Season from outside Indonesia, please be aware that your information may be transferred to, stored, and processed in Indonesia or in the servers of our third-party partners located in various countries around the world, including the United States.
+
+Data protection laws in these countries may differ from those in your home country. By using the Game, you consent to the transfer of your information to these countries. We ensure that appropriate safeguards are in place for any cross-border transfers of personal data, in accordance with applicable law.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+12. GDPR — EUROPEAN USERS
+
+If you are located in the European Economic Area (EEA), the United Kingdom, or Switzerland, the following additional provisions apply:
+
+12.1 Legal Basis for Processing
+We process your personal data on the following legal bases:
+   - Legitimate Interests: Analytics, gameplay improvement, fraud prevention
+   - Consent: Personalized advertising (you may withdraw consent at any time)
+   - Contract Performance: Providing the Game service you have agreed to use
+   - Legal Obligation: Complying with applicable law
+
+12.2 Data Protection Officer
+ALTOMEDIA has not appointed a formal Data Protection Officer. For privacy-related inquiries, contact altomediaindonesia@gmail.com.
+
+12.3 Supervisory Authority
+You have the right to lodge a complaint with your local data protection supervisory authority if you believe we have not handled your personal data in accordance with applicable law.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+13. CCPA — CALIFORNIA USERS
+
+If you are a California resident, the California Consumer Privacy Act (CCPA) grants you specific rights regarding your personal information:
+
+- The right to know what personal information we collect, use, disclose, and sell
+- The right to request deletion of your personal information
+- The right to opt out of the "sale" of your personal information (we do not sell personal information in the traditional sense, but we may share it with advertising partners for ad targeting, which may constitute a "sale" under the CCPA)
+- The right to non-discrimination for exercising your CCPA rights
+
+To exercise your CCPA rights, contact us at altomediaindonesia@gmail.com with the subject line "CCPA Request".
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+14. CHANGES TO THIS PRIVACY POLICY
+
+We may update this Privacy Policy from time to time to reflect changes in our practices, the Game's features, or applicable law. When we make material changes, we will notify you by:
+   - Displaying a notice within the Game before or after update
+   - Updating the "Last Updated" date at the top of this Privacy Policy
+
+We encourage you to review this Privacy Policy periodically. Your continued use of the Game after the effective date of any changes constitutes your acceptance of the updated Privacy Policy.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+15. CONTACT US
+
+If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:
+
+  Developer:   ALTOMEDIA
+  Email:       altomediaindonesia@gmail.com
+  Game:        Castle Kingdom Season
+  Package:     com.altomedia.castlekingdomseason
+  Platform:    Google Play Store (Android)
+
+We aim to respond to all privacy-related inquiries within 30 calendar days.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+© 2026 ALTOMEDIA. All rights reserved.
+Castle Kingdom Season is a trademark of ALTOMEDIA.

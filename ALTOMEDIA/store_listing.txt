@@ -1,0 +1,112 @@
+STORE LISTING — CASTLE KINGDOM SEASON
+Google Play Console — Store Presence > Main Store Listing
+Developer: ALTOMEDIA | Package: com.altomedia.castlekingdomseason
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+▌ APP NAME (max 30 characters)
+Castle Kingdom Season
+
+▌ SHORT DESCRIPTION (max 80 characters)
+Build your kingdom, defend the castle — the ultimate tower defense adventure!
+
+▌ FULL DESCRIPTION (max 4000 characters)
+⚔️ CASTLE KINGDOM SEASON — Defend Your Realm, Build Your Legend!
+
+Welcome to Castle Kingdom Season, the most thrilling medieval tower defense game on Android! Rally your heroes, fortify your castle walls, and unleash devastating defensive towers to protect your kingdom from relentless waves of invading enemies.
+
+🏰 BUILD YOUR ULTIMATE DEFENSE
+Place powerful defensive towers including razor-sharp archer towers, explosive cannon emplacements, and devastating mage towers that rain magical fire upon your foes. Strategically position your defenses to maximize damage on every winding battlefield path. Every placement decision matters — the wrong tower in the wrong spot could mean the fall of your kingdom!
+
+🌍 CONQUER DIVERSE WORLDS
+Battle across stunning seasonal landscapes:
+• 🌿 Verdant Forest — Lush green meadows, winding woodland paths, and dense tree cover hiding enemy approaches
+• ❄️ Frozen Tundra — Snow-covered battlefields where icy winds slow your enemies but also challenge your towers
+• 🏜️ Desert Ruins — Scorching desert terrain with ancient ruined paths carved through crumbling sandstone fortresses
+• 🌙 Midnight Swamp — Dark marshlands under moonlight where shadows conceal dangerous enemy battalions
+
+🎯 MASTER EPIC LEVELS
+With dozens of handcrafted levels across multiple worlds, each stage introduces new challenges, tougher enemy types, and more complex path layouts. Earn up to 3 stars on every level and prove your strategic mastery!
+
+🧙 DIVERSE TOWER ARSENAL
+Unlock and upgrade a growing arsenal of defensive towers:
+• 🏹 Archer Tower — Fast-attacking, reliable damage against light infantry
+• 💣 Cannon Tower — Devastating area-of-effect blasts that obliterate clustered enemies
+• 🔮 Mage Tower — Slows enemies with magical ice spells while dealing massive damage
+• ⚡ Lightning Tower — Chain lightning that jumps between multiple enemies simultaneously
+
+👹 FACE RELENTLESS ENEMY HORDES
+Dozens of enemy types storm your kingdom:
+• Goblins — Fast and numerous; overwhelm defenses with sheer numbers
+• Orcs — Heavily armored brutes that soak up damage before falling
+• Skeleton Warriors — Undead soldiers that never tire
+• Dark Knights — Elite enemies with shields and high resistances
+• Boss Waves — Massive, screen-filling bosses that test your entire strategy
+
+💰 UPGRADE YOUR KINGDOM
+Collect coins from defeated enemies and invest in permanent upgrades:
+• Increase tower damage, attack speed, and range
+• Unlock special abilities for each tower type
+• Purchase powerful one-time-use spells to turn the tide of battle
+
+🎮 FEATURES AT A GLANCE
+✅ 40+ challenging levels across 4 unique worlds
+✅ 6 unique tower types with full upgrade trees
+✅ 20+ enemy types including epic boss battles
+✅ Strategic depth — no two playthroughs are alike
+✅ Completely FREE to play
+✅ Earn rewards by watching optional videos
+✅ No internet connection required to play
+✅ Optimized for all Android phones and tablets
+✅ Regular seasonal content updates
+
+Whether you're a seasoned strategy veteran or a casual gamer looking for an addictive challenge, Castle Kingdom Season delivers endless hours of satisfying medieval warfare. Can you hold the line and protect your kingdom through every season?
+
+Download Castle Kingdom Season now — your kingdom needs you!
+
+🔗 Privacy Policy: https://github.com/kdsmedia/castlekingdomseason
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+▌ CATEGORY
+Games > Strategy
+
+▌ TAGS / KEYWORDS (enter individually in Play Console)
+tower defense, castle game, kingdom defense, strategy game, medieval game,
+castle kingdom, defense game, offline game, tower game, kingdom game,
+fantasy strategy, castle defense, fort defense, offline strategy, free strategy
+
+▌ CONTENT RATING
+Target Audience: Everyone / Everyone 7+
+Violence: Mild cartoon violence (no blood, no gore)
+In-App Purchases: Yes (optional rewarded ads / consumable items)
+IARC Certificate: Complete the IARC questionnaire in Play Console
+
+▌ CONTACT DETAILS
+Developer Name: ALTOMEDIA
+Email Address:  altomediaindonesia@gmail.com
+Website:        https://github.com/kdsmedia/castlekingdomseason
+Privacy Policy: https://github.com/kdsmedia/castlekingdomseason (or hosted URL)
+
+▌ IN-APP PURCHASES (Data Safety section)
+Does the app collect data? YES
+Does the app share data? YES (advertising partners: AdMob, Unity Ads)
+Is data encrypted in transit? YES
+Can users request data deletion? YES — email altomediaindonesia@gmail.com
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+▌ GRAPHIC ASSETS CHECKLIST
+[ ] Hi-res icon:        ALTOMEDIA/graphics/icon_512x512.png       (512 × 512 px)
+[ ] Feature graphic:    ALTOMEDIA/graphics/feature_graphic_1024x500.png (1024 × 500 px)
+[ ] Phone screenshot 1: ALTOMEDIA/graphics/screenshot_gameplay_1.png
+[ ] Phone screenshot 2: ALTOMEDIA/graphics/screenshot_gameplay_2.png
+[ ] Phone screenshot 3: ALTOMEDIA/graphics/screenshot_level_select.png
+
+Note: Play Console requires minimum 2 phone screenshots.
+      Screenshots must be min 320 px on shortest side, max 3840 px on longest side.
+      Aspect ratio must be between 16:9 and 9:16.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+© 2026 ALTOMEDIA

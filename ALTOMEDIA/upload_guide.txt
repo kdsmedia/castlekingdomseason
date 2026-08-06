@@ -1,0 +1,256 @@
+PANDUAN UPLOAD RILIS & STORE LISTING — CASTLE KINGDOM SEASON
+Google Play Console — Panduan Lengkap Langkah demi Langkah
+Developer: ALTOMEDIA | altomediaindonesia@gmail.com
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+BAGIAN A: PERSIAPAN SEBELUM UPLOAD
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+A1. Pastikan kamu memiliki semua file berikut:
+    ✅ File APK atau AAB (Android App Bundle) hasil build Unity Cloud Build
+    ✅ Keystore file: castlekingdom.keystore (ada di repo)
+    ✅ Keystore password: (tersimpan di tim internal)
+    ✅ Key alias: castlekingdom
+    ✅ Akun Google Play Console aktif (https://play.google.com/console)
+    ✅ Pembayaran $25 pendaftaran developer sudah dilakukan
+    ✅ Semua grafis dari folder ALTOMEDIA/graphics/
+
+A2. Cek verifikasi APK/AAB sebelum upload:
+    - Buka Android Studio atau gunakan command: aapt dump badging <file.apk>
+    - Pastikan Package Name = com.altomedia.castlekingdomseason
+    - Pastikan versionCode naik dari versi sebelumnya (pertama kali: gunakan 1)
+    - Pastikan versionName sesuai (contoh: "1.0.0")
+    - Pastikan APK sudah ditandatangani dengan castlekingdom.keystore
+
+A3. Hosting Privacy Policy:
+    - Privacy policy HARUS dapat diakses via URL publik
+    - Upload file ALTOMEDIA/privacy_policy.txt ke GitHub Pages, Notion, atau Google Sites
+    - Atau buat halaman sederhana di: https://sites.google.com/new
+    - Salin URL tersebut — akan dibutuhkan di langkah D
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+BAGIAN B: MEMBUAT APLIKASI BARU DI PLAY CONSOLE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Langkah 1 — Login Play Console
+    1. Buka https://play.google.com/console
+    2. Login dengan akun Google yang terdaftar sebagai developer
+
+Langkah 2 — Buat Aplikasi Baru
+    1. Klik tombol [+ Buat Aplikasi] di sudut kanan atas
+    2. Pilih bahasa default: Indonesian (Bahasa Indonesia) atau English (United States)
+    3. Nama aplikasi: Castle Kingdom Season
+    4. Pilih tipe: Game
+    5. Pilih apakah berbayar atau gratis: Gratis (Free)
+    6. Centang kotak persetujuan kebijakan developer dan ekspor AS
+    7. Klik [Buat Aplikasi]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+BAGIAN C: MENGISI STORE LISTING (TAMPILAN TOKO)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Di menu kiri, pilih: Tumbuhkan > Kehadiran Toko > Cantuman Toko Utama
+
+Langkah 3 — Detail Aplikasi
+    1. Nama Aplikasi (maks 30 karakter):
+       Castle Kingdom Season
+
+    2. Deskripsi Singkat (maks 80 karakter):
+       Build your kingdom, defend the castle — the ultimate tower defense adventure!
+
+    3. Deskripsi Lengkap (maks 4000 karakter):
+       ➜ Salin dari file: ALTOMEDIA/store_listing.txt (bagian FULL DESCRIPTION)
+
+Langkah 4 — Grafis
+    1. Ikon Aplikasi (512 × 512 px):
+       ➜ Upload: ALTOMEDIA/graphics/icon_512x512.png
+
+    2. Grafis Unggulan / Feature Graphic (1024 × 500 px):
+       ➜ Upload: ALTOMEDIA/graphics/feature_graphic_1024x500.png
+
+    3. Screenshot Ponsel (min 2, maks 8):
+       ➜ Upload semua file dari:
+          - ALTOMEDIA/graphics/screenshot_gameplay_1.png
+          - ALTOMEDIA/graphics/screenshot_gameplay_2.png
+          - ALTOMEDIA/graphics/screenshot_level_select.png
+
+    CATATAN SCREENSHOT:
+    - Ukuran min: 320 px sisi terpendek
+    - Ukuran maks: 3840 px sisi terpanjang
+    - Rasio aspek: antara 16:9 dan 9:16
+    - Format: JPG atau PNG, maks 8 MB per file
+
+Langkah 5 — Simpan perubahan, lalu klik [Simpan]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+BAGIAN D: PENGATURAN APLIKASI (APP SETUP)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Langkah 6 — Kebijakan Privasi
+    Di menu kiri: Kebijakan > Kebijakan Privasi
+    1. Masukkan URL kebijakan privasi yang sudah di-hosting (dari Langkah A3)
+    2. Klik [Simpan]
+
+Langkah 7 — Penilaian Konten (Content Rating)
+    Di menu kiri: Kebijakan > Penilaian Konten
+    1. Klik [Mulai kuesioner]
+    2. Masukkan email: altomediaindonesia@gmail.com
+    3. Pilih kategori: Game
+    4. Pilih subkategori: Strategy (Strategi)
+    5. Jawab pertanyaan kekerasan: Pilih "Kekerasan Fiksi Ringan / Kartun"
+    6. Pertanyaan seksual: Tidak Ada
+    7. Pertanyaan bahasa: Tidak Ada
+    8. Klik [Hitung Penilaian] — target rating: Everyone / Everyone 10+
+    9. Klik [Kirim]
+
+Langkah 8 — Target Audiens
+    Di menu kiri: Kebijakan > Target Audiens & Konten
+    1. Pilih rentang usia target: 13-17 dan 18+
+       (Jika game bisa dimainkan anak di bawah 13, tambahkan opsi anak)
+    2. Apakah game cocok untuk anak-anak? Pilih sesuai konten
+    3. Klik [Simpan]
+
+Langkah 9 — Formulir Data Safety
+    Di menu kiri: Kebijakan > Keamanan Data
+    1. Klik [Mulai]
+    2. Pengumpulan Data: YA (app mengumpulkan data perangkat dan analitik)
+    3. Jenis data yang dikumpulkan:
+       ✅ Identifikasi perangkat (Advertising ID)
+       ✅ Aktivitas dalam aplikasi (gameplay events)
+       ✅ Info aplikasi dan kinerja (crash logs)
+    4. Apakah data dibagikan dengan pihak ketiga? YA (Google AdMob, Unity Ads, Firebase)
+    5. Apakah data dienkripsi dalam transit? YA
+    6. Dapatkah pengguna meminta penghapusan data? YA
+    7. Klik [Simpan]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+BAGIAN E: UPLOAD APK / AAB (RILIS)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Langkah 10 — Pilih Track Rilis
+    Di menu kiri: Pengujian dan Rilis > Rilis
+
+    PILIHAN TRACK:
+    a) Internal Testing (Pengujian Internal) — DISARANKAN PERTAMA KALI
+       → Hanya bisa diakses oleh penguji internal (hingga 100 akun)
+       → Tidak perlu review Google
+       → Langsung tersedia dalam hitungan menit
+
+    b) Closed Testing (Alpha) — Untuk beta tester terbatas
+       → Butuh review singkat dari Google
+
+    c) Open Testing (Beta) — Untuk publik terbatas
+       → Butuh review dari Google (~3-7 hari)
+
+    d) Production (Produksi) — Rilis publik penuh
+       → Butuh review lengkap dari Google (~3-7 hari, bisa lebih lama untuk aplikasi baru)
+
+    ➜ REKOMENDASI: Mulai dari Internal Testing untuk pengujian awal,
+      lalu promote ke Production setelah yakin tidak ada bug.
+
+Langkah 11 — Buat Rilis Baru
+    1. Klik pada track yang dipilih (misal: Internal Testing)
+    2. Klik [Buat Rilis Baru]
+    3. Di bagian "Signing Aplikasi":
+       - Pilih: "Gunakan Google Play App Signing" (SANGAT DISARANKAN)
+       - Ini memungkinkan Google menyimpan keystore secara aman
+       - Upload upload key (castlekingdom.keystore) jika diminta
+
+Langkah 12 — Upload File Build
+    1. Klik [Upload] di bagian "App Bundles dan APK"
+    2. Upload file .aab (AAB lebih disarankan) atau .apk dari Unity Cloud Build
+    3. Tunggu proses upload selesai (bisa beberapa menit tergantung ukuran file)
+    4. Pastikan tidak ada error "APK tidak valid" atau "Upload key tidak cocok"
+
+Langkah 13 — Catatan Rilis (Release Notes)
+    Isi catatan rilis versi pertama (maks 500 karakter):
+    
+    Bahasa Indonesia:
+    "Selamat datang di Castle Kingdom Season! Rilis perdana game tower defense medieval terbaik. Bangun benteng, tempatkan menara, dan lindungi kerajaanmu dari gelombang musuh yang tiada henti. 40+ level, 4 dunia unik, gratis sepenuhnya!"
+
+    English:
+    "Welcome to Castle Kingdom Season! First release of the ultimate medieval tower defense game. Build towers, defend your castle, and stop enemy waves across 40+ levels and 4 unique worlds. Completely free to play!"
+
+Langkah 14 — Simpan dan Kirim Review
+    1. Klik [Simpan sebagai draf] untuk menyimpan sementara
+    2. Jika sudah siap: klik [Tinjau rilis]
+    3. Periksa semua peringatan dan error, perbaiki jika ada
+    4. Klik [Mulai rollout ke [nama track]]
+    5. Konfirmasi dengan klik [Rollout]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+BAGIAN F: INFORMASI KONTAK & HARGA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Langkah 15 — Informasi Kontak Developer
+    Di menu kiri: Tumbuhkan > Kehadiran Toko > Cantuman Toko Utama
+    Gulir ke bagian bawah halaman:
+    1. Email: altomediaindonesia@gmail.com
+    2. Website: https://github.com/kdsmedia/castlekingdomseason
+    3. Telepon: (opsional, bisa dikosongkan)
+
+Langkah 16 — Harga & Distribusi
+    Di menu kiri: Pengaturan Aplikasi > Distribusi
+    1. Harga: GRATIS
+    2. Negara distribusi: Pilih "Semua negara" atau pilih negara spesifik
+    3. Kategori: Game > Strategi (Strategy)
+    4. Klik [Simpan]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+BAGIAN G: CHECKLIST FINAL SEBELUM RILIS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Cek semua item di bawah sebelum submit ke Production:
+
+STORE LISTING:
+[ ] Nama aplikasi terisi (Castle Kingdom Season)
+[ ] Deskripsi singkat terisi (maks 80 karakter)
+[ ] Deskripsi lengkap terisi (maks 4000 karakter)
+[ ] Ikon 512x512 px diupload
+[ ] Feature Graphic 1024x500 px diupload
+[ ] Minimal 2 screenshot ponsel diupload
+
+KEBIJAKAN & COMPLIANCE:
+[ ] URL Privacy Policy aktif dan bisa diakses publik
+[ ] Penilaian konten IARC selesai dan rating sudah tertera
+[ ] Formulir Data Safety diisi dan disimpan
+[ ] Target audiens dipilih
+
+RILIS:
+[ ] File APK atau AAB berhasil diupload tanpa error
+[ ] versionCode unik (tidak ada duplikat)
+[ ] App Signing dikonfigurasi
+[ ] Catatan rilis diisi dalam bahasa Indonesia dan Inggris
+[ ] Tidak ada error merah di halaman Dashboard Play Console
+
+INFORMASI DEVELOPER:
+[ ] Email developer: altomediaindonesia@gmail.com
+[ ] Kategori game: Strategy
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+BAGIAN H: TIMELINE REVIEW GOOGLE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Internal Testing:    Langsung tersedia (~menit), tanpa review
+Closed/Open Testing: 1-3 hari review
+Production (baru):   3-7 hari (bisa hingga 14 hari untuk akun baru)
+Production (update): 1-3 hari
+
+Tips mempercepat review:
+- Pastikan semua metadata lengkap sebelum submit
+- Jangan submit ulang berkali-kali (memperlambat proses)
+- Pastikan APK tidak mengandung malware atau kode berbahaya
+- Jika ditolak, baca email notifikasi dari Google dan perbaiki masalah yang disebutkan
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Pertanyaan? Hubungi: altomediaindonesia@gmail.com
+© 2026 ALTOMEDIA — Castle Kingdom Season
