@@ -1,0 +1,58 @@
+// Unity Android Gradle template — CastleKingdomSeason
+// Updated for Google Play Console compliance (targetSdkVersion 35, August 2026).
+//
+// Dependencies resolved from Maven at build time; old static AARs removed.
+// Requires Unity 2017.1+ with "Custom Gradle Template" enabled in
+// Player Settings > Publishing Settings.
+
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.4.2'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 35
+
+    defaultConfig {
+        minSdkVersion 24
+        targetSdkVersion 35
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+
+    // Enable AndroidX and Jetifier to migrate old Support Library references.
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    // Google Mobile Ads SDK 23.2.0 — Play Console compliant, supports API 35.
+    // Replaces the old static play-services-ads-11.0.4.aar bundles.
+    implementation 'com.google.android.gms:play-services-ads:23.2.0'
+
+    // Unity Ads SDK 4.12.1 — Play Console compliant, supports targetSdkVersion 35.
+    // Replaces the old static UnityAds.aar (2.x era).
+    // NOTE: The C# wrapper DLLs in Assets/UnityAds/ must also be updated to
+    //       Unity Ads 4.x. Download the latest Unity Ads SDK unitypackage from
+    //       https://github.com/Unity-Technologies/unity-ads-android/releases
+    //       and import it into this project to replace Assets/UnityAds/*.dll.
+    implementation 'com.unity3d.ads:unity-ads:4.12.1'
+}

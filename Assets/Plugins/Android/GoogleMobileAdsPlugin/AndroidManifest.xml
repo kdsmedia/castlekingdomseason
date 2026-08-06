@@ -8,8 +8,8 @@ required for displaying ads.
     package="com.google.unity"
     android:versionName="1.0"
     android:versionCode="1">
-  <uses-sdk android:minSdkVersion="14"
-      android:targetSdkVersion="19" />
+  <uses-sdk android:minSdkVersion="24"
+      android:targetSdkVersion="35" />
   <application>
     <!-- AdMob App ID for CastleKingdomSeason -->
     <meta-data

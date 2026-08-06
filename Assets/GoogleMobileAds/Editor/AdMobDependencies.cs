@@ -1,4 +1,4 @@
-﻿// Copyright (C) 2016 Google, Inc.
+// Copyright (C) 2016 Google, Inc.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -17,6 +17,7 @@ using System.Collections.Generic;
 using UnityEditor;
 
 /// AdMob dependencies file.
+/// Updated for Play Console compliance: Google Mobile Ads SDK 23.2.0 (targetSdkVersion 35).
 [InitializeOnLoad]
 public class AdMobDependencies : AssetPostprocessor
 {
@@ -40,10 +41,12 @@ public class AdMobDependencies : AssetPostprocessor
                 "ProjectSettings"
             });
 
+        // Google Mobile Ads SDK 23.2.0 — required for Play Console targetSdkVersion 35 compliance.
+        // Minimum Android SDK: 24. Requires AndroidX (enable Jetifier in mainTemplate.gradle).
         Google.VersionHandler.InvokeInstanceMethod(
             svcSupport, "DependOn",
             new object[] { "com.google.android.gms", "play-services-ads",
-                           "LATEST" },
+                           "23.2.0" },
             namedArgs: new Dictionary<string, object>() {
                 {"packageIds", new string[] {
                         "extra-google-m2repository",
@@ -55,11 +58,12 @@ public class AdMobDependencies : AssetPostprocessor
         if (iosResolver == null) {
             return;
         }
+        // Google Mobile Ads SDK 11.10.0+ for iOS App Store compliance.
         Google.VersionHandler.InvokeStaticMethod(
             iosResolver, "AddPod",
             new object[] { "Google-Mobile-Ads-SDK" },
             namedArgs: new Dictionary<string, object>() {
-                { "version", "7.13+" }
+                { "version", "11.10+" }
             });
 #endif  // UNITY_IOS
     }
@@ -77,4 +81,3 @@ public class AdMobDependencies : AssetPostprocessor
         }
     }
 }
-
