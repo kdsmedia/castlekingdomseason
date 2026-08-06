@@ -142,11 +142,15 @@ public class AdsControl : MonoBehaviour
 	{
 		switch (result) {
 		case ShowResult.Finished:
-			FindObjectOfType<Menu_Manager> ().UpdateGems (10);
+			// Route reward to AdsRewardShop so it can track per-package progress
+			if (AdsRewardShop.Instance != null)
+				AdsRewardShop.Instance.OnAdWatched ();
 			break;
 		case ShowResult.Skipped:
+			Debug.Log ("AdsControl: reward ad skipped.");
 			break;
 		case ShowResult.Failed:
+			Debug.Log ("AdsControl: reward ad failed.");
 			break;
 		}
 	}
