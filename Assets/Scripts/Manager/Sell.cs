@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -17,7 +17,10 @@ public class Sell : MonoBehaviour
             {
                 Gold = Mathf.RoundToInt(70 * 0.9f);
             }
-            Gold = Mathf.RoundToInt(70 * 0.6f);
+            else
+            {
+                Gold = Mathf.RoundToInt(70 * 0.6f);
+            }
         }
         else if (index == 1)
         {
@@ -25,7 +28,10 @@ public class Sell : MonoBehaviour
             {
                 Gold = Mathf.RoundToInt(110 * 0.9f);
             }
-            Gold = Mathf.RoundToInt(110 * 0.6f);
+            else
+            {
+                Gold = Mathf.RoundToInt(110 * 0.6f);
+            }
         }
         else if (index == 2)
         {
@@ -33,7 +39,10 @@ public class Sell : MonoBehaviour
             {
                 Gold = Mathf.RoundToInt(160 * 0.9f);
             }
-            Gold = Mathf.RoundToInt(160 * 0.6f);
+            else
+            {
+                Gold = Mathf.RoundToInt(160 * 0.6f);
+            }
         }
         else if (index == 3)
         {
@@ -41,7 +50,10 @@ public class Sell : MonoBehaviour
             {
                 Gold = Mathf.RoundToInt(230 * 0.9f);
             }
-            Gold = Mathf.RoundToInt(230 * 0.6f);
+            else
+            {
+                Gold = Mathf.RoundToInt(230 * 0.6f);
+            }
         }
         else if (index == 4)
         {
@@ -49,7 +61,10 @@ public class Sell : MonoBehaviour
             {
                 Gold = Mathf.RoundToInt(250 * 0.9f);
             }
-            Gold = Mathf.RoundToInt(250 * 0.6f);
+            else
+            {
+                Gold = Mathf.RoundToInt(250 * 0.6f);
+            }
         }
         else
         {
@@ -57,7 +72,10 @@ public class Sell : MonoBehaviour
             {
                 Gold = Mathf.RoundToInt(250 * 0.9f);
             }
-            Gold = Mathf.RoundToInt(250 * 0.6f);
+            else
+            {
+                Gold = Mathf.RoundToInt(250 * 0.6f);
+            }
         }
     }
 
