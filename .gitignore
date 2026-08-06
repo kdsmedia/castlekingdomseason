@@ -27,4 +27,6 @@ Recordings/
 
 .DS_Store
 Thumbs.db
+# Allow only the scoped CastleKingdomSeason google-services file
 google-services*.json
+!Assets/google-services.json
