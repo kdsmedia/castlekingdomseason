@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: e5378984f626c457bafe77afae88d201
+timeCreated: 1505796382
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Junegull-Regular
+  fontNames:
+  - Junegull-Regular
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
