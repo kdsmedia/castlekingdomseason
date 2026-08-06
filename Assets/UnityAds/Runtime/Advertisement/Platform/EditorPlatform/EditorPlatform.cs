@@ -6,7 +6,7 @@ using System.Net;
 using UnityEngine.Advertisements.Events;
 using UnityEngine.Advertisements.Utilities;
 
-namespace UnityEngine.Advertisements.Platform.Editor
+namespace UnityEngine.Advertisements.Platform.EditorPlatform
 {
     internal class EditorPlatform : INativePlatform
     {

@@ -182,8 +182,8 @@ namespace UnityEngine.Advertisements
                 INativePlatform nativePlatform;
                 INativeBanner nativeBanner;
 #if UNITY_EDITOR
-                nativeBanner = new Platform.Editor.EditorBanner();
-                nativePlatform = new Platform.Editor.EditorPlatform();
+                nativeBanner = new Platform.EditorPlatform.EditorBanner();
+                nativePlatform = new Platform.EditorPlatform.EditorPlatform();
 #elif UNITY_ANDROID
                 nativeBanner = new Platform.Android.AndroidBanner();
                 nativePlatform = new Platform.Android.AndroidPlatform();;

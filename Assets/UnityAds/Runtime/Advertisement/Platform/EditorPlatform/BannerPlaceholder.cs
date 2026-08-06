@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace UnityEngine.Advertisements.Platform.Editor
+namespace UnityEngine.Advertisements.Platform.EditorPlatform
 {
     public class BannerPlaceholder : MonoBehaviour
     {

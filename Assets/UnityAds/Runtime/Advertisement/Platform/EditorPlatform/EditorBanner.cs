@@ -1,5 +1,5 @@
 #if UNITY_EDITOR
-namespace UnityEngine.Advertisements.Platform.Editor
+namespace UnityEngine.Advertisements.Platform.EditorPlatform
 {
     internal class EditorBanner : INativeBanner
     {
