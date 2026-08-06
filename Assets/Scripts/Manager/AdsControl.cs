@@ -117,9 +117,7 @@ public class AdsControl : MonoBehaviour
 
 	public bool GetRewardAvailable ()
 	{
-		bool avaiable = false;
-
-		return avaiable;
+		return Advertisement.IsReady (UnityZoneID);
 	}
 
 	public void ShowRewardVideo ()
