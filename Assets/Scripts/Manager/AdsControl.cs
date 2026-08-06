@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections.Generic;
 using System.Collections;
 using System;
@@ -21,13 +21,28 @@ public class AdsControl : MonoBehaviour
 	InterstitialAd interstitial;
 
 
-	public string AdmobID_Android,AdmobID_IOS, UnityID_Android,UnityID_IOS, UnityZoneID;
+	// Ad unit IDs — configured for ALTOMEDIA / CastleKingdomSeason
+	private const string ADMOB_INTERSTITIAL_ANDROID  = "ca-app-pub-6881903056221433/1893694801";
+	private const string ADMOB_INTERSTITIAL_IOS      = "ca-app-pub-6881903056221433/1893694801";
+	private const string ADMOB_REWARD_ANDROID        = "ca-app-pub-6881903056221433/2929896144";
+	private const string UNITY_GAME_ID_ANDROID       = "6170475";
+	private const string UNITY_GAME_ID_IOS           = "6170475";
+	private const string UNITY_REWARDED_PLACEMENT    = "rewardedVideo";
+
+	// Legacy serialized fields kept for backward compatibility (values overridden in Awake)
+	public string AdmobID_Android, AdmobID_IOS, UnityID_Android, UnityID_IOS, UnityZoneID;
 
 	public static AdsControl Instance { get { return _instance; } }
 
 	void Awake ()
 	{
-		
+		// Override serialized values with hardcoded constants
+		AdmobID_Android = ADMOB_INTERSTITIAL_ANDROID;
+		AdmobID_IOS     = ADMOB_INTERSTITIAL_IOS;
+		UnityID_Android = UNITY_GAME_ID_ANDROID;
+		UnityID_IOS     = UNITY_GAME_ID_IOS;
+		UnityZoneID     = UNITY_REWARDED_PLACEMENT;
+
 		if (FindObjectsOfType (typeof(AdsControl)).Length > 1) {
 			Destroy (gameObject);
 			return;

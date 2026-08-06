@@ -11,5 +11,9 @@ required for displaying ads.
   <uses-sdk android:minSdkVersion="14"
       android:targetSdkVersion="19" />
   <application>
+    <!-- AdMob App ID for CastleKingdomSeason -->
+    <meta-data
+        android:name="com.google.android.gms.ads.APPLICATION_ID"
+        android:value="ca-app-pub-6881903056221433~6071064804"/>
   </application>
 </manifest>
