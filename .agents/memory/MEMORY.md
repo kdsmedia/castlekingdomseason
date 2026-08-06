@@ -1,0 +1,1 @@
+- [Push-after-edit rule](push-after-edit.md) — user requires a git push to origin/main after every edit, no exceptions.

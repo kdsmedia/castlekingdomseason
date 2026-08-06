@@ -1,0 +1,425 @@
+Running as SYSTEM
+Running Prebuild steps
+In quiet period, build will start momentarily...
+[2026-08-06T21:43:00Z] - INFO: Initializing disk
+Current Partition Information:
+MSFT_Partition (ObjectId = "{1}\\bot-24-618150\root/Microsoft/Windo...)
+OS disk unallocated bytes: 0
+OS disk already fully allocated (<1GB free) - C: at max, skipping Get-PartitionSupportedSize + resize
+[2026-08-06T21:43:05Z] - INFO: Finished disk initialization
+[2026-08-06T21:43:06Z] - INFO: Mounting Unity Version: 2021_3_45f2
+[2026-08-06T21:43:06Z] - INFO: Mounting NAS (Azure File Share)
+[2026-08-06T21:43:06Z] - INFO: Network connectivity confirmed
+[2026-08-06T21:43:06Z] - INFO: Using password-based authentication
+[2026-08-06T21:43:07Z] - INFO: Successfully mounted NAS drive using password authentication
+Mounting WIM image (attempt 1 of 3)...
+WIM image mounted successfully
+[2026-08-06T21:44:02Z] - INFO: Re-stamping mounted editor tool mtimes
+Re-stamped 0 future-dated of 11119 total files under C:\Mount\Unity\Data\PlaybackEngines\WebGLSupport in 0.6s
+Re-stamped 0 future-dated of 2152 total files under C:\Mount\Unity\Data\il2cpp in 0.1s
+Re-stamped 0 future-dated of 34 total files under C:\Mount\Unity\Data\Tools\BuildPipeline in 0s
+[2026-08-06T21:44:03Z] - INFO: Finished re-stamping mounted editor tool mtimes
+[2026-08-06T21:44:03Z] - INFO: Finished Mounting Unity Version
+Using /home/buildbot/.rvm/gems/ruby-3.3.5
+[2026-08-06T21:44:10Z] - INFO: Beginning dependency updates
+[2026-08-06T21:44:13Z] - INFO: Installing latest BVR version.
+1 gem installed
+[2026-08-06T21:44:27Z] - INFO: Removing 7.6.52.3.3.5
+Successfully uninstalled bvr-7.6.52.3.3.5
+[2026-08-06T21:44:28Z] - INFO: BuildPack DLL 'buildpack-c24614c.zip' already on disk, skipping download
+Requesting Unity licenses for this machine...
+Requesting Unity licenses for this machine...
+[2026-08-06T21:44:45.885Z] - 7.6.53.3.3.5 - INFO: ++++++++++++++++++++++++++++++++++++++++
+[2026-08-06T21:44:45.885Z] - 7.6.53.3.3.5 - INFO: + Acquiring Unity License
+[2026-08-06T21:44:45.885Z] - 7.6.53.3.3.5 - INFO: ++++++++++++++++++++++++++++++++++++++++
+[2026-08-06T21:44:45.887Z] - 7.6.53.3.3.5 - INFO: Attempting to activate a token based license
+[2026-08-06T21:44:45.887Z] - 7.6.53.3.3.5 - INFO: Attempting to activate a token based license
+[2026-08-06T21:44:53.847Z] - 7.6.53.3.3.5 - INFO: [06/Aug/2026:21:44:53] Sent Unity activation metrics
+[2026-08-06T21:44:54Z] - INFO: Finished updating dependencies
+[2026-08-06T21:45:06.560Z] - 7.6.53.3.3.5 - INFO: ++++++++++++++++++++ SECTION ++++++++++++++++++++
+[2026-08-06T21:45:06.560Z] - 7.6.53.3.3.5 - INFO: + Configuring Build Attempt
+[2026-08-06T21:45:06.560Z] - 7.6.53.3.3.5 - INFO: ++++++++++++++++++++ SECTION ++++++++++++++++++++
+[2026-08-06T21:45:06.563Z] - 7.6.53.3.3.5 - INFO: ++++++++++++++++++++++++++++++++++++++++
+[2026-08-06T21:45:06.563Z] - 7.6.53.3.3.5 - INFO: + Updating Pre-Build Status
+[2026-08-06T21:45:06.563Z] - 7.6.53.3.3.5 - INFO: ++++++++++++++++++++++++++++++++++++++++
+[2026-08-06T21:45:07.042Z] - 7.6.53.3.3.5 - INFO: prebuildstatus finished successfully.
+[2026-08-06T21:45:07.042Z] - 7.6.53.3.3.5 - INFO: ++++++++++++++++++++++++++++++++++++++++
+[2026-08-06T21:45:07.042Z] - 7.6.53.3.3.5 - INFO: + Setting run time variables
+[2026-08-06T21:45:07.042Z] - 7.6.53.3.3.5 - INFO: ++++++++++++++++++++++++++++++++++++++++
+[2026-08-06T21:45:07.042Z] - 7.6.53.3.3.5 - INFO: ++++++++++++++++++++++++++++++++++++++++
+[2026-08-06T21:45:08.087Z] - 7.6.53.3.3.5 - INFO: Setting up SSH keys using ssh-agent
+[2026-08-06T21:45:08.745Z] - 7.6.53.3.3.5 - INFO: SSH key added to agent
+[2026-08-06T21:45:20.607Z] - 7.6.53.3.3.5 - INFO: ++++++++++++++++++++ SECTION ++++++++++++++++++++
+[2026-08-06T21:45:20.607Z] - 7.6.53.3.3.5 - INFO: + Checking out Source Code
+[2026-08-06T21:45:20.607Z] - 7.6.53.3.3.5 - INFO: ++++++++++++++++++++ SECTION ++++++++++++++++++++
+[2026-08-06T21:45:21.235Z] - 7.6.53.3.3.5 - INFO: SCM Checkout
+[2026-08-06T21:45:21.235Z] - 7.6.53.3.3.5 - INFO: GIT PAT: Checkout project...
+[2026-08-06T21:45:21.235Z] - 7.6.53.3.3.5 - INFO: GIT PAT: Checkout project...
+[2026-08-06T21:45:21.805Z] - 7.6.53.3.3.5 - INFO: GIT: git version (2.44.0)
+[2026-08-06T21:45:21.805Z] - 7.6.53.3.3.5 - INFO: GIT PAT: Checking out https://github.com/kdsmedia/castlekingdomseason.git/main with depth of -1
+[2026-08-06T21:45:26.789Z] - 7.6.53.3.3.5 - INFO: GIT: Checking out via URI...
+[2026-08-06T21:45:26.789Z] - 7.6.53.3.3.5 - INFO: Attempt 1 of 5 to clone repository.
+[2026-08-06T21:45:37.721Z] - 7.6.53.3.3.5 - INFO: Cloned in 10 seconds.
+[2026-08-06T21:45:38.424Z] - 7.6.53.3.3.5 - INFO: /home/buildbot/.rvm/gems/ruby-3.3.5/gems/bvr-7.6.53.3.3.5/scripts/git_update_timestamps.py BUILD_PATH/p
+[2026-08-06T21:45:40.375Z] - 7.6.53.3.3.5 - INFO: git lfs track
+[2026-08-06T21:45:41.897Z] - 7.6.53.3.3.5 - INFO: GIT PAT: Checkout operation complete.
+[2026-08-06T21:45:41.897Z] - 7.6.53.3.3.5 - INFO: SCM Checkout completed in 20 seconds.
+[2026-08-06T21:45:41.898Z] - 7.6.53.3.3.5 - INFO: ++++++++++++++++++++++++++++++++++++++++
+[2026-08-06T21:45:41.898Z] - 7.6.53.3.3.5 - INFO: + Updating Post-Checkout Status
+[2026-08-06T21:45:41.898Z] - 7.6.53.3.3.5 - INFO: ++++++++++++++++++++++++++++++++++++++++
+[2026-08-06T21:45:42.188Z] - 7.6.53.3.3.5 - INFO: Calculated Workspace Size: 177.17 MiB
+[2026-08-06T21:45:42.188Z] - 7.6.53.3.3.5 - INFO: GIT: Get current revision
+[2026-08-06T21:45:43.053Z] - 7.6.53.3.3.5 - INFO: GIT: Current revision is 0f450d3ad339e566171dcd0da2829f40792d5a1d
+[2026-08-06T21:45:43.053Z] - 7.6.53.3.3.5 - INFO: Detected last used Unity version from ProjectVersion.txt ({:editor_version=>"2021.3.45f2"})
+[2026-08-06T21:45:43.239Z] - 7.6.53.3.3.5 - INFO: postcheckoutstatus finished successfully.
+[2026-08-06T21:45:43.353Z] - 7.6.53.3.3.5 - INFO: Setting the environment variable "BUILD_REVISION".
+[2026-08-06T21:45:55.022Z] - 7.6.53.3.3.5 - INFO: ++++++++++++++++++++ SECTION ++++++++++++++++++++
+[2026-08-06T21:45:55.022Z] - 7.6.53.3.3.5 - INFO: + Fetching Cached library_2021_3_45f2_windows
+[2026-08-06T21:45:55.022Z] - 7.6.53.3.3.5 - INFO: ++++++++++++++++++++ SECTION ++++++++++++++++++++
+[2026-08-06T21:45:55.342Z] - 7.6.53.3.3.5 - INFO: Extracting cache files to BUILD_PATH/p
+[2026-08-06T21:45:55.708Z] - 7.6.53.3.3.5 - INFO: library_2021_3_45f2_windows successfully fetched and unpacked from remote cache
+[2026-08-06T21:46:06.943Z] - 7.6.53.3.3.5 - INFO: ++++++++++++++++++++ SECTION ++++++++++++++++++++
+[2026-08-06T21:46:06.943Z] - 7.6.53.3.3.5 - INFO: + Fetch Android KeyStore
+[2026-08-06T21:46:06.943Z] - 7.6.53.3.3.5 - INFO: ++++++++++++++++++++ SECTION ++++++++++++++++++++
+[2026-08-06T21:46:06.944Z] - 7.6.53.3.3.5 - INFO: Fetching Android Keystore for project 18968031196257/7d6ce4e2-ba19-412e-9059-6ce7231aacb8 and credential f5b283af-88d2-4bde-bc55-c5316a168584
+[2026-08-06T21:46:07.104Z] - 7.6.53.3.3.5 - INFO: Created the Android KeyStore
+[2026-08-06T21:46:21.873Z] - 7.6.53.3.3.5 - INFO: ++++++++++++++++++++ SECTION ++++++++++++++++++++
+[2026-08-06T21:46:21.873Z] - 7.6.53.3.3.5 - INFO: + Build Unity Project
+[2026-08-06T21:46:21.873Z] - 7.6.53.3.3.5 - INFO: ++++++++++++++++++++ SECTION ++++++++++++++++++++
+[2026-08-06T21:46:21.879Z] - 7.6.53.3.3.5 - INFO: ++++++++++++++++++++++++++++++++++++++++
+[2026-08-06T21:46:21.879Z] - 7.6.53.3.3.5 - INFO: + Building with Unity installed at /cygdrive/c/Mount/Unity/Unity.exe
+[2026-08-06T21:46:21.879Z] - 7.6.53.3.3.5 - INFO: ++++++++++++++++++++++++++++++++++++++++
+[2026-08-06T21:46:21.879Z] - 7.6.53.3.3.5 - INFO: ++++++++++++++++++++++++++++++++++++++++
+[2026-08-06T21:46:21.879Z] - 7.6.53.3.3.5 - INFO: + Copy Buildpack
+[2026-08-06T21:46:21.879Z] - 7.6.53.3.3.5 - INFO: ++++++++++++++++++++++++++++++++++++++++
+[2026-08-06T21:46:22.358Z] - 7.6.53.3.3.5 - INFO: Using 2020 DLL
+[2026-08-06T21:46:22.358Z] - 7.6.53.3.3.5 - INFO: ++++++++++++++++++++++++++++++++++++++++
+[2026-08-06T21:46:22.358Z] - 7.6.53.3.3.5 - INFO: + Installing UnityCloud build tools
+[2026-08-06T21:46:22.358Z] - 7.6.53.3.3.5 - INFO: ++++++++++++++++++++++++++++++++++++++++
+[2026-08-06T21:46:22.365Z] - 7.6.53.3.3.5 - INFO: ++++++++++++++++++++++++++++++++++++++++
+[2026-08-06T21:46:22.365Z] - 7.6.53.3.3.5 - INFO: + Setting Build Target
+[2026-08-06T21:46:22.365Z] - 7.6.53.3.3.5 - INFO: ++++++++++++++++++++++++++++++++++++++++
+[2026-08-06T21:46:22.850Z] - 7.6.53.3.3.5 - INFO: ++++++++++++++++++++++++++++++++++++++++
+[2026-08-06T21:46:22.850Z] - 7.6.53.3.3.5 - INFO: + Inject Scripting Define Symbols
+[2026-08-06T21:46:22.850Z] - 7.6.53.3.3.5 - INFO: ++++++++++++++++++++++++++++++++++++++++
+[2026-08-06T21:46:22.850Z] - 7.6.53.3.3.5 - INFO:        Injecting custom Scripting Define Symbols 'UNITY_CLOUD_BUILD'
+[2026-08-06T21:46:22.852Z] - 7.6.53.3.3.5 - INFO: ++++++++++++++++++++++++++++++++++++++++
+[2026-08-06T21:46:22.852Z] - 7.6.53.3.3.5 - INFO: + Cache Enlighten Data
+[2026-08-06T21:46:22.852Z] - 7.6.53.3.3.5 - INFO: ++++++++++++++++++++++++++++++++++++++++
+[2026-08-06T21:46:23.095Z] - 7.6.53.3.3.5 - INFO: ++++++++++++++++++++++++++++++++++++++++
+[2026-08-06T21:46:23.095Z] - 7.6.53.3.3.5 - INFO: + Building Unity player (android)
+[2026-08-06T21:46:23.095Z] - 7.6.53.3.3.5 - INFO: ++++++++++++++++++++++++++++++++++++++++
+[2026-08-06T21:46:26Z - Unity] [Licensing::IpcConnector] Connection attempt to the License Client on channel: "LicenseClient-buildbot" failed because channel doesn't exist; code: "0x80000002"
+[2026-08-06T21:46:26Z - Unity] [Licensing::IpcConnector] Successfully connected to the License Client on channel: "LicenseClient-buildbot" at "2026-08-06T21:46:26.0783437Z"
+[error] [2026-08-06T21:46:26Z - Unity] [Licensing::Client] Error: Code 10 while verifying Licensing Client signature (process Id: 3740, path: "C:/Mount/Unity/Data/Resources/Licensing/Client/Unity.Licensing.Client.exe")
+[2026-08-06T21:46:26Z - Unity] [Licensing::Client] Handshaking with LicensingClient:
+[2026-08-06T21:46:26Z - Unity]   Version:                 1.15.4+eee609c
+[2026-08-06T21:46:26Z - Unity]   Session Id:              8e39b999da59419f8a13dea51facf963
+[2026-08-06T21:46:26Z - Unity]   Correlation Id:          50415bbb81ccf5e6bdd05f7476339f57
+[2026-08-06T21:46:26Z - Unity]   External correlation Id: 2924072785933539491
+[2026-08-06T21:46:26Z - Unity]   Machine Id:              nsZoJ2yR5LjOi4aiseseg2Nk3oA=
+[2026-08-06T21:46:26Z - Unity] Entitlement-based licensing initiated
+[2026-08-06T21:46:26Z - Unity] [Licensing::Client] Successfully updated the access token
+[2026-08-06T21:46:27Z - Unity] [Licensing::Client] Successfully updated license
+[2026-08-06T21:46:27Z - Unity] Built from '2021.3/respin/2021.3.45f2-0da89fac8e' branch; Version is '2021.3.45f2 (88f88f591b2e) revision 8976527'; Using compiler version '192829333'; Build Type 'Release'
+[2026-08-06T21:46:27Z - Unity] OS: 'Windows 11  (10.0.26100) 64bit ServerRdsh' Language: 'en' Physical Memory: 16378 MB
+[2026-08-06T21:46:27Z - Unity] [Licensing::Client] Successfully resolved entitlement details
+[2026-08-06T21:46:27Z - Unity] BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+[2026-08-06T21:46:27Z - Unity] [Licensing::Client] Successfully resolved entitlement details
+[2026-08-06T21:46:27Z - Unity]
+[2026-08-06T21:46:27Z - Unity] COMMAND LINE ARGUMENTS:
+[2026-08-06T21:46:27Z - Unity] C:\Mount\Unity\Unity.exe
+[2026-08-06T21:46:27Z - Unity] -batchmode
+[2026-08-06T21:46:27Z - Unity] -buildTarget
+[2026-08-06T21:46:27Z - Unity] android
+[2026-08-06T21:46:27Z - Unity] -accessToken
+[2026-08-06T21:46:27Z - Unity] eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InVuaXR5LWtleXM6MzU0OWFkNDMtN2RjYS00YTdkLTg2MWMtYjJmM2ZjZmMyZTAyIiwiamt1IjoiaHR0cHM6Ly9rZXlzLnNlcnZpY2VzLnVuaXR5LmNvbS8ifQ.eyJleHAiOjE3ODYwNTYzODMsImlhdCI6MTc4NjA1Mjc4MywibmJmIjoxNzg2MDUyNzgzLCJqdGkiOiJkMzY2YzVjNC03NDA2LTQ0ZTMtODhhNS00ZGY0ZWM0NGRiMzIiLCJzdWIiOiJhNTYwYmIwZS02MmY1LTQyZTMtODdjMC0yNTQ2NGYxODAxYmUiLCJ2ZXJzaW9uIjoxLCJpc3MiOiJodHRwczovL3NlcnZpY2VzLnVuaXR5LmNvbSIsImF1ZCI6WyJvcmdJZDoxODk2ODAzMTE5NjI1NyJdLCJzY29wZXMiOlsiYnVpbGRfYXV0b21hdGlvbi5saWNlbnNlcy5jcmVhdGUiLCJidWlsZF9hdXRvbWF0aW9uLm5pbnRlbmRvX2FkbWluLmFzc2lnbiIsImJ1aWxkX2F1dG9tYXRpb24ubmludGVuZG9fc3dpdGNoMV9kZXZlbG9wZXIuYXNzaWduIiwiYnVpbGRfYXV0b21hdGlvbi5uaW50ZW5kb19zd2l0Y2gyX2RldmVsb3Blci5hc3NpZ24iLCJvYXV0aC5qd3QubGVnYWN5LnBhc3N0aHJvdWdoIiwicGFja2FnZV9tYW5hZ2VyLnBhY2thZ2VzLnJlYWQiLCJ1bml0eS5vcmdhbml6YXRpb25fcG9saWNpZXMud3JpdGUiXSwiYXBpS2V5UHVibGljSWRlbnRpZmllciI6IjVlYmRiNjVjLWUyMjEtNDAxNy1iMGVmLTNiYWMwNGNjMmNkMCJ9.faLcSa8bojpHCgtf2jgqwAGKLF_i5WYmsC9mHJeJ_kTi1l5WkXI9WwKuO5QpeQNQYH_ts2v6aLCyJ1wnmbsL5MuU9XUWabUPlGleIqWN9sbg-vQopkvbR4x3ChYZbsY4maM0u0F5_r5t6uiEUdv_OflLz2Vcsy_37kMq8BXWkd_2PKbwh5JLKw8Jb_UBA_sQ-3tkVn_nqPxQVsoQMxBFGPMPX_mHz4qcwD5x-X6Ai9XLe-sPCX9-KA0ivhssIz9Ft4gsDljeCFxegADm1YaBULRI8Yj19lHiR3cxgf7MlvtjUW9db56fih_gkWx-RiISTnhu2Lru7Ootxwn_xs-KvQ
+[2026-08-06T21:46:27Z - Unity] -buildconfig
+[2026-08-06T21:46:27Z - Unity] BUILD_PATH/p\build.json
+[2026-08-06T21:46:27Z - Unity] -bvrbuildtarget
+[2026-08-06T21:46:27Z - Unity] castle-kingdom-season
+[2026-08-06T21:46:27Z - Unity] -logFile
+[2026-08-06T21:46:27Z - Unity] -projectPath
+[2026-08-06T21:46:27Z - Unity] BUILD_PATH/p
+[2026-08-06T21:46:27Z - Unity] -executeMethod
+[2026-08-06T21:46:27Z - Unity] UnityEditor.CloudBuild.Builder.Build
+[2026-08-06T21:46:27Z - Unity] -bvrextradatapath
+[2026-08-06T21:46:27Z - Unity] BUILD_PATH/p\.build\last\castle-kingdom-season\extra_data
+[2026-08-06T21:46:27Z - Unity] -bvriconpath
+[2026-08-06T21:46:27Z - Unity] BUILD_PATH/p\.build\last\castle-kingdom-season\extra_data\artifacts\icon.png
+[2026-08-06T21:46:27Z - Unity] -bvrbuildreportpath
+[2026-08-06T21:46:27Z - Unity] BUILD_PATH/p\.build\last\castle-kingdom-season\extra_data\build_report
+[2026-08-06T21:46:27Z - Unity] -quit
+[2026-08-06T21:46:27Z - Unity] Successfully changed project path to: BUILD_PATH/p
+[2026-08-06T21:46:27Z - Unity] BUILD_PATH/p
+[2026-08-06T21:46:27Z - Unity] [UnityMemory] Configuration Parameters - Can be set up in boot.config
+[2026-08-06T21:46:27Z - Unity]     "memorysetup-bucket-allocator-granularity=16"
+[2026-08-06T21:46:27Z - Unity]     "memorysetup-bucket-allocator-bucket-count=8"
+[2026-08-06T21:46:27Z - Unity]     "memorysetup-bucket-allocator-block-size=33554432"
+[2026-08-06T21:46:27Z - Unity]     "memorysetup-bucket-allocator-block-count=8"
+[2026-08-06T21:46:27Z - Unity]     "memorysetup-main-allocator-block-size=16777216"
+[2026-08-06T21:46:27Z - Unity]     "memorysetup-thread-allocator-block-size=16777216"
+[2026-08-06T21:46:27Z - Unity]     "memorysetup-gfx-main-allocator-block-size=16777216"
+[2026-08-06T21:46:27Z - Unity]     "memorysetup-gfx-thread-allocator-block-size=16777216"
+[2026-08-06T21:46:27Z - Unity]     "memorysetup-cache-allocator-block-size=4194304"
+[2026-08-06T21:46:27Z - Unity]     "memorysetup-typetree-allocator-block-size=2097152"
+[2026-08-06T21:46:27Z - Unity]     "memorysetup-profiler-bucket-allocator-granularity=16"
+[2026-08-06T21:46:27Z - Unity]     "memorysetup-profiler-bucket-allocator-bucket-count=8"
+[2026-08-06T21:46:27Z - Unity]     "memorysetup-profiler-bucket-allocator-block-size=33554432"
+[2026-08-06T21:46:27Z - Unity]     "memorysetup-profiler-bucket-allocator-block-count=8"
+[2026-08-06T21:46:27Z - Unity]     "memorysetup-profiler-allocator-block-size=16777216"
+[2026-08-06T21:46:27Z - Unity]     "memorysetup-profiler-editor-allocator-block-size=1048576"
+[2026-08-06T21:46:27Z - Unity]     "memorysetup-temp-allocator-size-main=16777216"
+[2026-08-06T21:46:27Z - Unity]     "memorysetup-job-temp-allocator-block-size=2097152"
+[2026-08-06T21:46:27Z - Unity]     "memorysetup-job-temp-allocator-block-size-background=1048576"
+[2026-08-06T21:46:27Z - Unity]     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+[2026-08-06T21:46:27Z - Unity]     "memorysetup-temp-allocator-size-background-worker=32768"
+[2026-08-06T21:46:27Z - Unity]     "memorysetup-temp-allocator-size-job-worker=262144"
+[2026-08-06T21:46:27Z - Unity]     "memorysetup-temp-allocator-size-preload-manager=33554432"
+[2026-08-06T21:46:27Z - Unity]     "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+[2026-08-06T21:46:27Z - Unity]     "memorysetup-temp-allocator-size-audio-worker=65536"
+[2026-08-06T21:46:27Z - Unity]     "memorysetup-temp-allocator-size-cloud-worker=32768"
+[2026-08-06T21:46:27Z - Unity]     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+[2026-08-06T21:46:27Z - Unity]     "memorysetup-temp-allocator-size-gfx=262144"
+[2026-08-06T21:46:27Z - Unity] Player connection [7416] Host "[IP] 10.9.0.11 [Port] 55496 [Flags] 2 [Guid] 2113596387 [EditorId] 2113596387 [Version] 1048832 [Id] WindowsEditor(7,bot-24-618150) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+[2026-08-06T21:46:27Z - Unity]
+[2026-08-06T21:46:27Z - Unity] Player connection [7416] Host "[IP] 10.9.0.11 [Port] 55496 [Flags] 2 [Guid] 2113596387 [EditorId] 2113596387 [Version] 1048832 [Id] WindowsEditor(7,bot-24-618150) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+[2026-08-06T21:46:27Z - Unity]
+[2026-08-06T21:46:28Z - Unity] [Physics::Module] Initialized MultithreadedJobDispatcher with {0} workers.
+[error] Aborting batchmode due to fatal error:
+The file 'BUILD_PATH/p/ProjectSettings/ProjectSettings.asset' is corrupted! Remove it and launch unity again!
+[Position out of bounds!]
+[2026-08-06T21:46:28Z - Unity] The file 'BUILD_PATH/p/ProjectSettings/ProjectSettings.asset' is corrupted! Remove it and launch unity again!
+[2026-08-06T21:46:28Z - Unity] [Position out of bounds!]
+[error] [2026-08-06T21:46:28Z - Unity] Fatal Error! The file 'BUILD_PATH/p/ProjectSettings/ProjectSettings.asset' is corrupted! Remove it and launch unity again!
+[2026-08-06T21:46:28Z - Unity] [Position out of bounds!]
+[2026-08-06T21:46:28Z - Unity] Crash!!!
+[2026-08-06T21:46:28Z - Unity] SymInit: Symbol-SearchPath: 'C:/Mount/Unity/Data/Mono;.;BUILD_PATH/p;BUILD_PATH/p\Library\BurstCache\JIT;C:\Mount\Unity;C:\Windows;C:\Windows\system32;', symOptions: 534, UserName: 'buildbot'
+[2026-08-06T21:46:28Z - Unity] OS-Version: 10.0.0
+[2026-08-06T21:46:28Z - Unity] C:\Mount\Unity\Unity.exe:Unity.exe (00007FF708EC0000), size: 73998336 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2021.3.45.63631
+[2026-08-06T21:46:28Z - Unity] C:\Windows\SYSTEM32\ntdll.dll:ntdll.dll (00007FF80C260000), size: 2514944 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.8521
+[2026-08-06T21:46:28Z - Unity] C:\Windows\System32\KERNEL32.DLL:KERNEL32.DLL (00007FF80B580000), size: 823296 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.8521
+[2026-08-06T21:46:28Z - Unity] C:\Windows\System32\KERNELBASE.dll:KERNELBASE.dll (00007FF8099D0000), size: 4169728 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.8655
+[2026-08-06T21:46:28Z - Unity] C:\Windows\System32\CRYPT32.dll:CRYPT32.dll (00007FF8096D0000), size: 1540096 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.8521
+[2026-08-06T21:46:28Z - Unity] C:\Windows\System32\ucrtbase.dll:ucrtbase.dll (00007FF809E80000), size: 1359872 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.8521
+[2026-08-06T21:46:28Z - Unity] C:\Windows\System32\USER32.dll:USER32.dll (00007FF80BD40000), size: 1863680 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.8521
+[2026-08-06T21:46:28Z - Unity] C:\Windows\System32\win32u.dll:win32u.dll (00007FF8099A0000), size: 159744 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.8655
+[2026-08-06T21:46:28Z - Unity] C:\Windows\SYSTEM32\bcrypt.dll:bcrypt.dll (00007FF809410000), size: 172032 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.8521
+[2026-08-06T21:46:28Z - Unity] C:\Windows\System32\GDI32.dll:GDI32.dll (00007FF80A110000), size: 176128 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.8328
+[2026-08-06T21:46:28Z - Unity] C:\Windows\System32\sechost.dll:sechost.dll (00007FF80B650000), size: 696320 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.8521
+[2026-08-06T21:46:28Z - Unity] C:\Mount\Unity\optix.6.0.0.dll:optix.6.0.0.dll (00007FFFF24D0000), size: 208896 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.0.0.0
+[2026-08-06T21:46:28Z - Unity] C:\Windows\System32\gdi32full.dll:gdi32full.dll (00007FF8095A0000), size: 1224704 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.8521
+[2026-08-06T21:46:28Z - Unity] C:\Windows\System32\msvcp_win.dll:msvcp_win.dll (00007FF809DD0000), size: 667648 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.8521
+[2026-08-06T21:46:28Z - Unity] C:\Mount\Unity\s3tcompress.dll:s3tcompress.dll (00007FFFF2410000), size: 180224 (result: 0), SymType: '-deferred-', PDB: ''
+[2026-08-06T21:46:28Z - Unity] C:\Windows\System32\ADVAPI32.dll:ADVAPI32.dll (00007FF80BA00000), size: 745472 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.8521
+[2026-08-06T21:46:28Z - Unity] C:\Windows\System32\msvcrt.dll:msvcrt.dll (00007FF809FE0000), size: 692224 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 7.0.26100.8246
+[2026-08-06T21:46:28Z - Unity] C:\Windows\System32\RPCRT4.dll:RPCRT4.dll (00007FF80B700000), size: 1146880 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.8521
+[2026-08-06T21:46:28Z - Unity] C:\Mount\Unity\etccompress.dll:etccompress.dll (00007FFFDD640000), size: 5066752 (result: 0), SymType: '-deferred-', PDB: ''
+[2026-08-06T21:46:28Z - Unity] C:\Windows\System32\SHELL32.dll:SHELL32.dll (00007FF80ACF0000), size: 7880704 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.8655
+[2026-08-06T21:46:28Z - Unity] C:\Mount\Unity\compress_bc7e.dll:compress_bc7e.dll (00007FFFDEBA0000), size: 1433600 (result: 0), SymType: '-deferred-', PDB: ''
+[2026-08-06T21:46:28Z - Unity] C:\Windows\System32\SHLWAPI.dll:SHLWAPI.dll (00007FF80C1B0000), size: 421888 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.8521
+[2026-08-06T21:46:28Z - Unity] C:\Mount\Unity\ispc_texcomp.dll:ispc_texcomp.dll (00007FFFDD480000), size: 1826816 (result: 0), SymType: '-deferred-', PDB: ''
+[2026-08-06T21:46:28Z - Unity] C:\Windows\System32\ole32.dll:ole32.dll (00007FF80C010000), size: 1671168 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.8521
+[2026-08-06T21:46:28Z - Unity] C:\Mount\Unity\FreeImage.dll:FreeImage.dll (0000000180000000), size: 5783552 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 3.18.0.0
+[2026-08-06T21:46:28Z - Unity] C:\Windows\System32\WS2_32.dll:WS2_32.dll (00007FF80BF20000), size: 524288 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.8521
+[2026-08-06T21:46:28Z - Unity] C:\Windows\System32\combase.dll:combase.dll (00007FF80A690000), size: 3682304 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.8521
+[2026-08-06T21:46:28Z - Unity] C:\Mount\Unity\libfbxsdk.dll:libfbxsdk.dll (00007FFFDDB20000), size: 10063872 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2020.3.4.0
+[2026-08-06T21:46:28Z - Unity] C:\Windows\System32\IMM32.dll:IMM32.dll (00007FF80BFD0000), size: 204800 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.8521
+[2026-08-06T21:46:28Z - Unity] C:\Mount\Unity\WinPixEventRuntime.dll:WinPixEventRuntime.dll (00007FFFFDD60000), size: 45056 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 1.0.1812.6001
+[2026-08-06T21:46:28Z - Unity] C:\Windows\System32\SETUPAPI.dll:SETUPAPI.dll (00007FF80A140000), size: 4747264 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.8521
+[2026-08-06T21:46:28Z - Unity] C:\Windows\System32\OLEAUT32.dll:OLEAUT32.dll (00007FF80AAE0000), size: 888832 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.8655
+[2026-08-06T21:46:28Z - Unity] C:\Windows\System32\WINTRUST.dll:WINTRUST.dll (00007FF809850000), size: 536576 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.8521
+[2026-08-06T21:46:28Z - Unity] C:\Mount\Unity\umbraoptimizer64.dll:umbraoptimizer64.dll (00007FFFDEA70000), size: 1187840 (result: 0), SymType: '-deferred-', PDB: ''
+[2026-08-06T21:46:28Z - Unity] C:\Windows\SYSTEM32\IPHLPAPI.DLL:IPHLPAPI.DLL (00007FF807B70000), size: 208896 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.8655
+[2026-08-06T21:46:28Z - Unity] C:\Mount\Unity\OpenImageDenoise.dll:OpenImageDenoise.dll (00007FFFD9230000), size: 48848896 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 1.4.2.0
+[2026-08-06T21:46:28Z - Unity] C:\Windows\SYSTEM32\GLU32.dll:GLU32.dll (00007FFFF22A0000), size: 184320 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.1150
+[2026-08-06T21:46:28Z - Unity] C:\Windows\SYSTEM32\OPENGL32.dll:OPENGL32.dll (00007FFFDD370000), size: 1097728 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.8521
+[2026-08-06T21:46:28Z - Unity] C:\Windows\SYSTEM32\WINMM.dll:WINMM.dll (00007FFFFB770000), size: 221184 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.8521
+[2026-08-06T21:46:28Z - Unity] C:\Windows\SYSTEM32\WINHTTP.dll:WINHTTP.dll (00007FFFFF020000), size: 1216512 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.8521
+[2026-08-06T21:46:28Z - Unity] C:\Windows\SYSTEM32\HID.DLL:HID.DLL (00007FF807AF0000), size: 61440 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.1150
+[2026-08-06T21:46:28Z - Unity] C:\Windows\SYSTEM32\dwmapi.dll:dwmapi.dll (00007FF8076E0000), size: 192512 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.8521
+[2026-08-06T21:46:28Z - Unity] C:\Mount\Unity\RadeonImageFilters.dll:RadeonImageFilters.dll (00007FFFDD090000), size: 2961408 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 1.7.0.0
+[2026-08-06T21:46:28Z - Unity] C:\Windows\SYSTEM32\VERSION.dll:VERSION.dll (00007FF801E20000), size: 45056 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.1150
+[2026-08-06T21:46:28Z - Unity] C:\Windows\SYSTEM32\MSVCP140.dll:MSVCP140.dll (00007FFFF8450000), size: 643072 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 14.51.36247.0
+[2026-08-06T21:46:28Z - Unity] C:\Windows\SYSTEM32\WSOCK32.dll:WSOCK32.dll (00007FF8024B0000), size: 40960 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.1
+[2026-08-06T21:46:28Z - Unity] C:\Windows\SYSTEM32\VCRUNTIME140.dll:VCRUNTIME140.dll (00007FFFFB1D0000), size: 180224 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 14.51.36247.0
+[2026-08-06T21:46:28Z - Unity] C:\Mount\Unity\SketchUpAPI.dll:SketchUpAPI.dll (00007FFFD8990000), size: 8990720 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 23.0.0.0
+[2026-08-06T21:46:28Z - Unity] C:\Mount\Unity\tbb12.dll:tbb12.dll (00007FFFEE010000), size: 434176 (result: 0), SymType: '-deferred-', PDB: ''
+[2026-08-06T21:46:28Z - Unity] C:\Windows\SYSTEM32\VCRUNTIME140_1.dll:VCRUNTIME140_1.dll (00007FFFFB1C0000), size: 49152 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 14.51.36247.0
+[2026-08-06T21:46:28Z - Unity] C:\Mount\Unity\RadeonML.dll:RadeonML.dll (00007FFFFBF20000), size: 94208 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 0.9.11.0
+[2026-08-06T21:46:28Z - Unity] C:\Windows\SYSTEM32\dxcore.dll:dxcore.dll (00007FF807530000), size: 278528 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.8521
+[2026-08-06T21:46:28Z - Unity] C:\Mount\Unity\SketchUpCommonPreferences.dll:SketchUpCommonPreferences.dll (00007FFFEA100000), size: 499712 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 23.0.0.0
+[2026-08-06T21:46:28Z - Unity] C:\Windows\SYSTEM32\Secur32.dll:Secur32.dll (00007FFFFBE90000), size: 53248 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.7705
+[2026-08-06T21:46:28Z - Unity] C:\Mount\Unity\tbbmalloc.dll:tbbmalloc.dll (00007FFFF1BB0000), size: 282624 (result: 0), SymType: '-deferred-', PDB: ''
+[2026-08-06T21:46:28Z - Unity] C:\Windows\SYSTEM32\SSPICLI.DLL:SSPICLI.DLL (00007FF808520000), size: 299008 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.8521
+[2026-08-06T21:46:28Z - Unity] C:\Mount\Unity\OpenRL.dll:OpenRL.dll (00000175ED680000), size: 12779520 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 1.5.0.2907
+[2026-08-06T21:46:28Z - Unity] C:\Windows\SYSTEM32\MSVCP100.dll:MSVCP100.dll (000000005FD50000), size: 622592 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.40219.325
+[2026-08-06T21:46:28Z - Unity] C:\Windows\SYSTEM32\cfgmgr32.DLL:cfgmgr32.DLL (00007FF809080000), size: 331776 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.8115
+[2026-08-06T21:46:28Z - Unity] C:\Windows\SYSTEM32\MSVCR100.dll:MSVCR100.dll (000000005FC70000), size: 860160 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.40219.325
+[2026-08-06T21:46:28Z - Unity] C:\Mount\Unity\embree.dll:embree.dll (00007FFFD6CD0000), size: 16711680 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2.14.0.0
+[2026-08-06T21:46:28Z - Unity] C:\Windows\SYSTEM32\MSWSOCK.DLL:MSWSOCK.DLL (00007FF8087F0000), size: 442368 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.8521
+[2026-08-06T21:46:28Z - Unity] C:\Mount\Unity\tbb.dll:tbb.dll (00007FFFE7140000), size: 413696 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2017.0.2016.1004
+[2026-08-06T21:46:28Z - Unity] C:\Windows\SYSTEM32\MSVCP120.dll:MSVCP120.dll (00007FFFE6F00000), size: 679936 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 12.0.40660.0
+[2026-08-06T21:46:28Z - Unity] C:\Windows\SYSTEM32\MSVCR120.dll:MSVCR120.dll (00007FFFE2F00000), size: 978944 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 12.0.40660.0
+[2026-08-06T21:46:28Z - Unity] C:\Mount\Unity\OpenRL_pthread.dll:OpenRL_pthread.dll (00000175EE2D0000), size: 61440 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2.9.0.0
+[2026-08-06T21:46:28Z - Unity] C:\Windows\SYSTEM32\MSASN1.dll:MSASN1.dll (00007FF808C00000), size: 77824 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.8246
+[2026-08-06T21:46:28Z - Unity] C:\Windows\SYSTEM32\kernel.appcore.dll:kernel.appcore.dll (00007FF808280000), size: 110592 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.8521
+[2026-08-06T21:46:28Z - Unity] C:\Windows\System32\bcryptPrimitives.dll:bcryptPrimitives.dll (00007FF8094F0000), size: 688128 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.8328
+[2026-08-06T21:46:28Z - Unity] C:\Windows\System32\shcore.dll:shcore.dll (00007FF80ABF0000), size: 1007616 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.8655
+[2026-08-06T21:46:28Z - Unity] C:\Windows\SYSTEM32\windows.storage.dll:windows.storage.dll (00007FF800CE0000), size: 8912896 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.8655
+[2026-08-06T21:46:28Z - Unity] C:\Windows\SYSTEM32\profapi.dll:profapi.dll (00007FF8093E0000), size: 167936 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.8521
+[2026-08-06T21:46:28Z - Unity] C:\Windows\SYSTEM32\CRYPTSP.dll:CRYPTSP.dll (00007FF808AD0000), size: 110592 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.8521
+[2026-08-06T21:46:28Z - Unity] C:\Windows\system32\rsaenh.dll:rsaenh.dll (00007FF8081E0000), size: 233472 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.7705
+[2026-08-06T21:46:28Z - Unity] C:\Windows\SYSTEM32\CRYPTBASE.dll:CRYPTBASE.dll (00007FF808AF0000), size: 49152 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.8246
+[2026-08-06T21:46:28Z - Unity] C:\Windows\System32\imagehlp.dll:imagehlp.dll (00007FF80ABC0000), size: 131072 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.4202
+[2026-08-06T21:46:28Z - Unity] C:\Windows\SYSTEM32\gpapi.dll:gpapi.dll (00007FF808860000), size: 192512 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.8521
+[2026-08-06T21:46:28Z - Unity] C:\Windows\System32\cryptnet.dll:cryptnet.dll (00007FFFFF3E0000), size: 241664 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.8521
+[2026-08-06T21:46:28Z - Unity] C:\Windows\SYSTEM32\WINNSI.DLL:WINNSI.DLL (00007FF800000000), size: 57344 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.8246
+[2026-08-06T21:46:28Z - Unity] C:\Windows\System32\NSI.dll:NSI.dll (00007FF80BF10000), size: 40960 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.8246
+[2026-08-06T21:46:28Z - Unity] C:\Windows\system32\IconCodecService.dll:IconCodecService.dll (00007FFFE39E0000), size: 45056 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.1
+[2026-08-06T21:46:28Z - Unity] C:\Windows\SYSTEM32\WindowsCodecs.dll:WindowsCodecs.dll (00007FF806EB0000), size: 2277376 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.8655
+[2026-08-06T21:46:28Z - Unity] C:\Windows\System32\clbcatq.dll:clbcatq.dll (00007FF80AA20000), size: 712704 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2001.12.10941.16384
+[2026-08-06T21:46:28Z - Unity] C:\Windows\System32\netprofm.dll:netprofm.dll (00007FFFFDDB0000), size: 450560 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.8521
+[2026-08-06T21:46:28Z - Unity] C:\Windows\System32\npmproxy.dll:npmproxy.dll (00007FFFFD650000), size: 102400 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.8328
+[2026-08-06T21:46:28Z - Unity] C:\Windows\system32\apphelp.dll:apphelp.dll (00007FF806BC0000), size: 655360 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.8521
+[2026-08-06T21:46:28Z - Unity] C:\Windows\SYSTEM32\dhcpcsvc6.DLL:dhcpcsvc6.DLL (00007FFFFDA20000), size: 118784 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.8655
+[2026-08-06T21:46:28Z - Unity] C:\Windows\SYSTEM32\dhcpcsvc.DLL:dhcpcsvc.DLL (00007FFFFD940000), size: 151552 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.8655
+[2026-08-06T21:46:28Z - Unity] C:\Windows\SYSTEM32\DNSAPI.dll:DNSAPI.dll (00007FF807CC0000), size: 1351680 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.8655
+[2026-08-06T21:46:28Z - Unity] C:\Windows\SYSTEM32\DSPARSE.dll:DSPARSE.dll (00007FF8085F0000), size: 53248 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.1
+[2026-08-06T21:46:28Z - Unity] C:\Windows\system32\napinsp.dll:napinsp.dll (00007FFFE67E0000), size: 98304 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.1150
+[2026-08-06T21:46:28Z - Unity] C:\Windows\System32\winrnr.dll:winrnr.dll (00007FFFE67C0000), size: 77824 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.8521
+[2026-08-06T21:46:28Z - Unity] C:\Windows\system32\nlansp_c.dll:nlansp_c.dll (00007FFFE6790000), size: 139264 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.8521
+[2026-08-06T21:46:28Z - Unity] C:\Windows\system32\wshbth.dll:wshbth.dll (00007FFFE6770000), size: 90112 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.5074
+[2026-08-06T21:46:28Z - Unity] C:\Windows\System32\fwpuclnt.dll:fwpuclnt.dll (00007FFFFDCA0000), size: 548864 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.8521
+[2026-08-06T21:46:28Z - Unity] C:\Windows\System32\rasadhlp.dll:rasadhlp.dll (00007FF8024E0000), size: 45056 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.7920
+[2026-08-06T21:46:28Z - Unity] C:\Mount\Unity\NVUnityPlugin.DLL:NVUnityPlugin.DLL (00007FFFD4060000), size: 1536000 (result: 0), SymType: '-deferred-', PDB: ''
+[2026-08-06T21:46:28Z - Unity] C:\Mount\Unity\Data\Tools\astcenc-avx2.dll:astcenc-avx2.dll (00007FFFD3FD0000), size: 561152 (result: 0), SymType: '-deferred-', PDB: ''
+[2026-08-06T21:46:28Z - Unity] C:\Windows\SYSTEM32\dbghelp.dll:dbghelp.dll (00007FFFFB390000), size: 2367488 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.8328
+[2026-08-06T21:46:28Z - Unity]
+[2026-08-06T21:46:28Z - Unity] ========== OUTPUTTING STACK TRACE ==================
+[2026-08-06T21:46:28Z - Unity]
+[2026-08-06T21:46:28Z - Unity] 0x00007FF809A91B6A (KERNELBASE) RaiseException
+[2026-08-06T21:46:31Z - Unity] 0x00007FF70A8A2D71 (Unity) EditorMonoConsole::LogToConsoleImplementation
+[2026-08-06T21:46:31Z - Unity] 0x00007FF70A8A385D (Unity) EditorMonoConsole::LogToConsoleImplementation
+[2026-08-06T21:46:31Z - Unity] 0x00007FF70B51A097 (Unity) DebugStringToFilePostprocessedStacktrace
+[2026-08-06T21:46:31Z - Unity] 0x00007FF70B5197ED (Unity) DebugStringToFile
+[error] [2026-08-06T21:46:31Z - Unity] 0x00007FF709B17CFA (Unity) CachedReader::OutOfBoundsError
+[2026-08-06T21:46:31Z - Unity] 0x00007FF709B16778 (Unity) CachedReader::End
+[2026-08-06T21:46:31Z - Unity] 0x00007FF709E9E345 (Unity) SerializedFile::ReadObject
+[2026-08-06T21:46:31Z - Unity] 0x00007FF709E834E2 (Unity) PersistentManager::ReadAndActivateObjectThreaded
+[2026-08-06T21:46:31Z - Unity] 0x00007FF709E83B41 (Unity) PersistentManager::ReadObjectThreaded
+[2026-08-06T21:46:31Z - Unity] 0x00007FF709E838F7 (Unity) PersistentManager::ReadObject
+[2026-08-06T21:46:31Z - Unity] 0x00007FF70B174248 (Unity) AssetDatabase::ProjectVersionBootSequence
+[2026-08-06T21:46:31Z - Unity] 0x00007FF70B1E91CD (Unity) InitializeAssetDatabaseV2
+[2026-08-06T21:46:31Z - Unity] 0x00007FF70B169895 (Unity) AssetDatabase::InitializeAssetDatabase
+[2026-08-06T21:46:31Z - Unity] 0x00007FF70AA23C33 (Unity) Application::InitializeProject
+[2026-08-06T21:46:31Z - Unity] 0x00007FF70AE75BC0 (Unity) WinMain
+[2026-08-06T21:46:31Z - Unity] 0x00007FF70C22598E (Unity) __scrt_common_main_seh
+[2026-08-06T21:46:31Z - Unity] 0x00007FF80B5AE957 (KERNEL32) BaseThreadInitThunk
+[2026-08-06T21:46:31Z - Unity] 0x00007FF80C2E7C1C (ntdll) RtlUserThreadStart
+[2026-08-06T21:46:31Z - Unity]
+[2026-08-06T21:46:31Z - Unity] ========== END OF STACKTRACE ===========
+[2026-08-06T21:46:31Z - Unity]
+[2026-08-06T21:46:31Z - Unity] A crash has been intercepted by the crash handler. For call stack and other details, see the latest crash report generated in:
+[2026-08-06T21:46:31Z - Unity]  * C:/BUILD_PATH/AppData/Local/Temp/Unity/Editor/Crashes
+[2026-08-06T21:46:33.491Z] - 7.6.53.3.3.5 - INFO:        Unity ran in '9.6721584' seconds
+[warning] [2026-08-06T21:46:33.784Z] - 7.6.53.3.3.5 - WARN: Running Unity in Batch Mode can help reproduce and debug potential build/test issues.
+[warning] [2026-08-06T21:46:33.784Z] - 7.6.53.3.3.5 - WARN: For additional information on building in Batch Mode see https://support.unity.com/hc/en-us/articles/9466056266004-How-do-I-Build-Unity-Project-in-Batchmode-Locally-
+[warning] [2026-08-06T21:46:33.784Z] - 7.6.53.3.3.5 - WARN: Try running Unity 2021.3.45f2 in batch mode locally with the following commands:
+[warning] [2026-08-06T21:46:33.784Z] - 7.6.53.3.3.5 - WARN: When running from Windows:
+[warning] [2026-08-06T21:46:33.784Z] - 7.6.53.3.3.5 - WARN:        "C:\Program Files\Unity\Hub\Editor\2021.3.45f2\Editor\Unity.exe" -logFile {PATH_TO_LOG_FILE} -projectPath {PROJECT_PATH} -batchmode -buildTarget android -accessToken eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InVuaXR5LWtleXM6MzU0OWFkNDMtN2RjYS00YTdkLTg2MWMtYjJmM2ZjZmMyZTAyIiwiamt1IjoiaHR0cHM6Ly9rZXlzLnNlcnZpY2VzLnVuaXR5LmNvbS8ifQ.eyJleHAiOjE3ODYwNTYzOTMsImlhdCI6MTc4NjA1Mjc5MywibmJmIjoxNzg2MDUyNzkzLCJqdGkiOiJhZGUzMmZlNy1hYzYyLTQ2YTAtYTJlNy0xMmJjMGExZGM5OTciLCJzdWIiOiJhNTYwYmIwZS02MmY1LTQyZTMtODdjMC0yNTQ2NGYxODAxYmUiLCJ2ZXJzaW9uIjoxLCJpc3MiOiJodHRwczovL3NlcnZpY2VzLnVuaXR5LmNvbSIsImF1ZCI6WyJvcmdJZDoxODk2ODAzMTE5NjI1NyJdLCJzY29wZXMiOlsiYnVpbGRfYXV0b21hdGlvbi5saWNlbnNlcy5jcmVhdGUiLCJidWlsZF9hdXRvbWF0aW9uLm5pbnRlbmRvX2FkbWluLmFzc2lnbiIsImJ1aWxkX2F1dG9tYXRpb24ubmludGVuZG9fc3dpdGNoMV9kZXZlbG9wZXIuYXNzaWduIiwiYnVpbGRfYXV0b21hdGlvbi5uaW50ZW5kb19zd2l0Y2gyX2RldmVsb3Blci5hc3NpZ24iLCJvYXV0aC5qd3QubGVnYWN5LnBhc3N0aHJvdWdoIiwicGFja2FnZV9tYW5hZ2VyLnBhY2thZ2VzLnJlYWQiLCJ1bml0eS5vcmdhbml6YXRpb25fcG9saWNpZXMud3JpdGUiXSwiYXBpS2V5UHVibGljSWRlbnRpZmllciI6IjVlYmRiNjVjLWUyMjEtNDAxNy1iMGVmLTNiYWMwNGNjMmNkMCJ9.b6vHre8rot7ifv1XVQSVk7c60MK3YjngFhyA0RxS72hWivHQguZbxVce57_chQUi2NCRJvOXuHb7M2AfACHrLLo7zAiKGdg0P__oVFD0ltuuwbgXybFqtNOCMhaWaxbga3KnuetpkQcelNe7vho4gG7BExrq5WYD5uIsxFIXbx1OAd1aX6Gk-ApDwBYxH8n0svc-sJf3AWsC4-WkJrFBxJ2WdubGujWSfQv_v50TQnsYm_5AT_bBjUFw8FAn52ICY6pSxw9NdMLMawb1e5I21j_lgM1BwoQJOVeJ4-hFLjP2_vibcMTZGiZig-pV_ki4qNIPYs4k3xGn4MTqHwYThw -quit -executeMethod {CLASS_AND_STATIC_METHOD_NAME_OF_BUILD_SCRIPT} -quit
+[warning] [2026-08-06T21:46:33.784Z] - 7.6.53.3.3.5 - WARN: When running from Mac:
+[warning] [2026-08-06T21:46:33.784Z] - 7.6.53.3.3.5 - WARN:        /APPLICATION_PATH/Unity/Hub/Editor/2021.3.45f2/Unity.app/Contents/MacOS/Unity -logFile {PATH_TO_LOG_FILE} -projectPath {PROJECT_PATH} -batchmode -buildTarget android -accessToken eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InVuaXR5LWtleXM6MzU0OWFkNDMtN2RjYS00YTdkLTg2MWMtYjJmM2ZjZmMyZTAyIiwiamt1IjoiaHR0cHM6Ly9rZXlzLnNlcnZpY2VzLnVuaXR5LmNvbS8ifQ.eyJleHAiOjE3ODYwNTYzOTMsImlhdCI6MTc4NjA1Mjc5MywibmJmIjoxNzg2MDUyNzkzLCJqdGkiOiJhZGUzMmZlNy1hYzYyLTQ2YTAtYTJlNy0xMmJjMGExZGM5OTciLCJzdWIiOiJhNTYwYmIwZS02MmY1LTQyZTMtODdjMC0yNTQ2NGYxODAxYmUiLCJ2ZXJzaW9uIjoxLCJpc3MiOiJodHRwczovL3NlcnZpY2VzLnVuaXR5LmNvbSIsImF1ZCI6WyJvcmdJZDoxODk2ODAzMTE5NjI1NyJdLCJzY29wZXMiOlsiYnVpbGRfYXV0b21hdGlvbi5saWNlbnNlcy5jcmVhdGUiLCJidWlsZF9hdXRvbWF0aW9uLm5pbnRlbmRvX2FkbWluLmFzc2lnbiIsImJ1aWxkX2F1dG9tYXRpb24ubmludGVuZG9fc3dpdGNoMV9kZXZlbG9wZXIuYXNzaWduIiwiYnVpbGRfYXV0b21hdGlvbi5uaW50ZW5kb19zd2l0Y2gyX2RldmVsb3Blci5hc3NpZ24iLCJvYXV0aC5qd3QubGVnYWN5LnBhc3N0aHJvdWdoIiwicGFja2FnZV9tYW5hZ2VyLnBhY2thZ2VzLnJlYWQiLCJ1bml0eS5vcmdhbml6YXRpb25fcG9saWNpZXMud3JpdGUiXSwiYXBpS2V5UHVibGljSWRlbnRpZmllciI6IjVlYmRiNjVjLWUyMjEtNDAxNy1iMGVmLTNiYWMwNGNjMmNkMCJ9.b6vHre8rot7ifv1XVQSVk7c60MK3YjngFhyA0RxS72hWivHQguZbxVce57_chQUi2NCRJvOXuHb7M2AfACHrLLo7zAiKGdg0P__oVFD0ltuuwbgXybFqtNOCMhaWaxbga3KnuetpkQcelNe7vho4gG7BExrq5WYD5uIsxFIXbx1OAd1aX6Gk-ApDwBYxH8n0svc-sJf3AWsC4-WkJrFBxJ2WdubGujWSfQv_v50TQnsYm_5AT_bBjUFw8FAn52ICY6pSxw9NdMLMawb1e5I21j_lgM1BwoQJOVeJ4-hFLjP2_vibcMTZGiZig-pV_ki4qNIPYs4k3xGn4MTqHwYThw -quit -executeMethod {CLASS_AND_STATIC_METHOD_NAME_OF_BUILD_SCRIPT} -quit
+[error] [2026-08-06T21:46:33.785Z] - 7.6.53.3.3.5 - FATAL:        ! Unity player export failed!
+  SystemExit (exit):
+    /home/buildbot/.rvm/gems/ruby-3.3.5/gems/bvr-7.6.53.3.3.5/lib/bvr/build/handlers/unity_compiler.rb:491:in `exit'
+    /home/buildbot/.rvm/gems/ruby-3.3.5/gems/bvr-7.6.53.3.3.5/lib/bvr/build/handlers/unity_compiler.rb:491:in `block in run_build'
+    /home/buildbot/.rvm/gems/ruby-3.3.5/gems/bvr-7.6.53.3.3.5/lib/utils/timing.rb:27:in `wrap'
+    /home/buildbot/.rvm/gems/ruby-3.3.5/gems/bvr-7.6.53.3.3.5/lib/bvr/build/handlers/unity_compiler.rb:473:in `run_build'
+    /home/buildbot/.rvm/gems/ruby-3.3.5/gems/bvr-7.6.53.3.3.5/lib/bvr/build/handlers/unity_compiler.rb:79:in `block in compile'
+    /home/buildbot/.rvm/gems/ruby-3.3.5/gems/bvr-7.6.53.3.3.5/lib/utils/timing.rb:27:in `wrap'
+    /home/buildbot/.rvm/gems/ruby-3.3.5/gems/bvr-7.6.53.3.3.5/lib/bvr/build/handlers/unity_compiler.rb:78:in `compile'
+    /home/buildbot/.rvm/gems/ruby-3.3.5/gems/bvr-7.6.53.3.3.5/lib/bvr/build/handlers/unity.rb:22:in `compile'
+    /home/buildbot/.rvm/gems/ruby-3.3.5/gems/bvr-7.6.53.3.3.5/lib/bvr/build/build_handler.rb:222:in `block in compile_handlers'
+    /home/buildbot/.rvm/gems/ruby-3.3.5/gems/bvr-7.6.53.3.3.5/lib/bvr/build/build_handler.rb:207:in `each'
+    /home/buildbot/.rvm/gems/ruby-3.3.5/gems/bvr-7.6.53.3.3.5/lib/bvr/build/build_handler.rb:207:in `each_with_index'
+    /home/buildbot/.rvm/gems/ruby-3.3.5/gems/bvr-7.6.53.3.3.5/lib/bvr/build/build_handler.rb:207:in `compile_handlers'
+    /home/buildbot/.rvm/gems/ruby-3.3.5/gems/bvr-7.6.53.3.3.5/lib/bvr/build/build_handler.rb:77:in `compile'
+    /home/buildbot/.rvm/gems/ruby-3.3.5/gems/bvr-7.6.53.3.3.5/lib/bvr/project.rb:142:in `call'
+    /home/buildbot/.rvm/gems/ruby-3.3.5/gems/bvr-7.6.53.3.3.5/lib/bvr/project.rb:142:in `build_chain'
+    /home/buildbot/.rvm/gems/ruby-3.3.5/gems/bvr-7.6.53.3.3.5/lib/bvr/project.rb:105:in `build'
+    /home/buildbot/.rvm/gems/ruby-3.3.5/gems/bvr-7.6.53.3.3.5/lib/bvr/thor/tasks/project.rb:168:in `call'
+    /home/buildbot/.rvm/gems/ruby-3.3.5/gems/bvr-7.6.53.3.3.5/lib/bvr/thor/tasks/project.rb:168:in `build_steps'
+    /home/buildbot/.rvm/gems/ruby-3.3.5/gems/bvr-7.6.53.3.3.5/lib/bvr/thor/tasks/project.rb:77:in `build'
+    /home/buildbot/.rvm/gems/ruby-3.3.5/gems/thor-0.19.4/lib/thor/command.rb:27:in `run'
+    /home/buildbot/.rvm/gems/ruby-3.3.5/gems/thor-0.19.4/lib/thor/invocation.rb:126:in `invoke_command'
+    /home/buildbot/.rvm/gems/ruby-3.3.5/gems/thor-0.19.4/lib/thor.rb:369:in `dispatch'
+    /home/buildbot/.rvm/gems/ruby-3.3.5/gems/thor-0.19.4/lib/thor/base.rb:444:in `start'
+    /home/buildbot/.rvm/gems/ruby-3.3.5/gems/thor-0.19.4/lib/thor/runner.rb:44:in `method_missing'
+    /home/buildbot/.rvm/gems/ruby-3.3.5/gems/bvr-7.6.53.3.3.5/lib/bvr/thor/runner.rb:27:in `block in method_missing'
+    /home/buildbot/.rvm/gems/ruby-3.3.5/gems/bvr-7.6.53.3.3.5/lib/utils/timing.rb:27:in `wrap'
+    /home/buildbot/.rvm/gems/ruby-3.3.5/gems/bvr-7.6.53.3.3.5/lib/bvr/thor/runner.rb:26:in `method_missing'
+    /home/buildbot/.rvm/gems/ruby-3.3.5/gems/thor-0.19.4/lib/thor/command.rb:29:in `run'
+    /home/buildbot/.rvm/gems/ruby-3.3.5/gems/thor-0.19.4/lib/thor/command.rb:126:in `run'
+    /home/buildbot/.rvm/gems/ruby-3.3.5/gems/thor-0.19.4/lib/thor/invocation.rb:126:in `invoke_command'
+    /home/buildbot/.rvm/gems/ruby-3.3.5/gems/thor-0.19.4/lib/thor.rb:369:in `dispatch'
+    /home/buildbot/.rvm/gems/ruby-3.3.5/gems/thor-0.19.4/lib/thor/base.rb:444:in `start'
+    /home/buildbot/.rvm/gems/ruby-3.3.5/gems/bvr-7.6.53.3.3.5/lib/bvr/thor/tasks/buildjobs.rb:65:in `buildscript'
+    /home/buildbot/.rvm/gems/ruby-3.3.5/gems/thor-0.19.4/lib/thor/command.rb:27:in `run'
+    /home/buildbot/.rvm/gems/ruby-3.3.5/gems/thor-0.19.4/lib/thor/invocation.rb:126:in `invoke_command'
+    /home/buildbot/.rvm/gems/ruby-3.3.5/gems/thor-0.19.4/lib/thor.rb:369:in `dispatch'
+    /home/buildbot/.rvm/gems/ruby-3.3.5/gems/thor-0.19.4/lib/thor/base.rb:444:in `start'
+    /home/buildbot/.rvm/gems/ruby-3.3.5/gems/thor-0.19.4/lib/thor/runner.rb:44:in `method_missing'
+    /home/buildbot/.rvm/gems/ruby-3.3.5/gems/bvr-7.6.53.3.3.5/lib/bvr/thor/runner.rb:27:in `block in method_missing'
+    /home/buildbot/.rvm/gems/ruby-3.3.5/gems/bvr-7.6.53.3.3.5/lib/utils/timing.rb:27:in `wrap'
+    /home/buildbot/.rvm/gems/ruby-3.3.5/gems/bvr-7.6.53.3.3.5/lib/bvr/thor/runner.rb:26:in `method_missing'
+    /home/buildbot/.rvm/gems/ruby-3.3.5/gems/thor-0.19.4/lib/thor/command.rb:29:in `run'
+    /home/buildbot/.rvm/gems/ruby-3.3.5/gems/thor-0.19.4/lib/thor/command.rb:126:in `run'
+    /home/buildbot/.rvm/gems/ruby-3.3.5/gems/thor-0.19.4/lib/thor/invocation.rb:126:in `invoke_command'
+    /home/buildbot/.rvm/gems/ruby-3.3.5/gems/thor-0.19.4/lib/thor.rb:369:in `dispatch'
+    /home/buildbot/.rvm/gems/ruby-3.3.5/gems/thor-0.19.4/lib/thor/base.rb:444:in `start'
+    /home/buildbot/.rvm/gems/ruby-3.3.5/gems/bvr-7.6.53.3.3.5/lib/bvr/thor/tasks/buildjobs.rb:29:in `build_script'
+    /home/buildbot/.rvm/gems/ruby-3.3.5/gems/thor-0.19.4/lib/thor/command.rb:27:in `run'
+    /home/buildbot/.rvm/gems/ruby-3.3.5/gems/thor-0.19.4/lib/thor/invocation.rb:126:in `invoke_command'
+    /home/buildbot/.rvm/gems/ruby-3.3.5/gems/thor-0.19.4/lib/thor.rb:369:in `dispatch'
+    /home/buildbot/.rvm/gems/ruby-3.3.5/gems/thor-0.19.4/lib/thor/base.rb:444:in `start'
+    /home/buildbot/.rvm/gems/ruby-3.3.5/gems/thor-0.19.4/lib/thor/runner.rb:44:in `method_missing'
+    /home/buildbot/.rvm/gems/ruby-3.3.5/gems/bvr-7.6.53.3.3.5/lib/bvr/thor/runner.rb:27:in `block in method_missing'
+    /home/buildbot/.rvm/gems/ruby-3.3.5/gems/bvr-7.6.53.3.3.5/lib/utils/timing.rb:27:in `wrap'
+    /home/buildbot/.rvm/gems/ruby-3.3.5/gems/bvr-7.6.53.3.3.5/lib/bvr/thor/runner.rb:26:in `method_missing'
+    /home/buildbot/.rvm/gems/ruby-3.3.5/gems/thor-0.19.4/lib/thor/command.rb:29:in `run'
+    /home/buildbot/.rvm/gems/ruby-3.3.5/gems/thor-0.19.4/lib/thor/command.rb:126:in `run'
+    /home/buildbot/.rvm/gems/ruby-3.3.5/gems/thor-0.19.4/lib/thor/invocation.rb:126:in `invoke_command'
+    /home/buildbot/.rvm/gems/ruby-3.3.5/gems/thor-0.19.4/lib/thor.rb:369:in `dispatch'
+    /home/buildbot/.rvm/gems/ruby-3.3.5/gems/thor-0.19.4/lib/thor/base.rb:444:in `start'
+    /home/buildbot/.rvm/gems/ruby-3.3.5/gems/bvr-7.6.53.3.3.5/bin/bvr_runner:11:in `<main>'
+[2026-08-06T21:46:34.145Z] - 7.6.53.3.3.5 - INFO: Setting the environment variable "BUILD_RESULT".
+[2026-08-06T21:46:34.145Z] - 7.6.53.3.3.5 - INFO: Setting the environment variable "BUILD_RESULT".
+[2026-08-06T21:46:34.145Z] - 7.6.53.3.3.5 - INFO: Setting the environment variable "BUILD_RESULT".
+[2026-08-06T21:46:46.528Z] - 7.6.53.3.3.5 - INFO: ++++++++++++++++++++ SECTION ++++++++++++++++++++
+[2026-08-06T21:46:46.528Z] - 7.6.53.3.3.5 - INFO: + Publishing
+[2026-08-06T21:46:46.528Z] - 7.6.53.3.3.5 - INFO: ++++++++++++++++++++ SECTION ++++++++++++++++++++
+[2026-08-06T21:46:46.531Z] - 7.6.53.3.3.5 - INFO: Publishing build 3 of 18968031196257/7d6ce4e2-ba19-412e-9059-6ce7231aacb8 for target 'castle-kingdom-season'...
+[2026-08-06T21:46:48.189Z] - 7.6.53.3.3.5 - INFO: SCM Checkout with credentials
+[2026-08-06T21:46:48.191Z] - 7.6.53.3.3.5 - INFO: configure_path: '/UNITY_PATH/Unity/windows/scm/plastic/PlasticSCM-11.0.16.8798/client/cm.exe' configure
+[2026-08-06T21:46:48.191Z] - 7.6.53.3.3.5 - INFO: '/UNITY_PATH/Unity/windows/scm/plastic/PlasticSCM-11.0.16.8798/client/cm.exe' configure --language="en" --workingmode="SSOWorkingMode" --user="appsidhanie@gmail.com" --token="*****" --server="18968031196257@cloud" --clientconf="BUILD_PATH/config\client.conf" --tokensconf="BUILD_PATH/config\tokens.conf"
+[2026-08-06T21:46:51.454Z] - 7.6.53.3.3.5 - INFO: '/UNITY_PATH/Unity/windows/scm/plastic/PlasticSCM-11.0.16.8798/client/cm.exe' workspace delete C:\\workspace\\workspace\\artifacts --clientconf="BUILD_PATH/config\client.conf" --tokensconf="BUILD_PATH/config\tokens.conf" --cloudregionsconf="BUILD_PATH/config\cloudregionstrue.conf" --config-files="webapi.conf=BUILD_PATH/config\webapitrue.conf"
+[2026-08-06T21:46:51.970Z] - 7.6.53.3.3.5 - INFO: '/UNITY_PATH/Unity/windows/scm/plastic/PlasticSCM-11.0.16.8798/client/cm.exe' workspace create artifacts_3 C:\\workspace\\workspace\\artifacts rep:CastleKingdomSeason/7d6ce4e2-ba19-412e-9059-6ce7231aacb8_artifacts@18968031196257@cloud --clientconf="BUILD_PATH/config\client.conf" --tokensconf="BUILD_PATH/config\tokens.conf" --cloudregionsconf="BUILD_PATH/config\cloudregionstrue.conf" --config-files="webapi.conf=BUILD_PATH/config\webapitrue.conf"
+[2026-08-06T21:46:56.595Z] - 7.6.53.3.3.5 - INFO: Workspace artifacts_3 has been correctly created
+[2026-08-06T21:46:56.607Z] - 7.6.53.3.3.5 - INFO: '/UNITY_PATH/Unity/windows/scm/plastic/PlasticSCM-11.0.16.8798/client/cm.exe' switch br:28849a26-df29-44e6-9c45-8996764c5254/build-attempt-3 --silent --clientconf="BUILD_PATH/config\client.conf" --tokensconf="BUILD_PATH/config\tokens.conf" --cloudregionsconf="BUILD_PATH/config\cloudregionstrue.conf" --config-files="webapi.conf=BUILD_PATH/config\webapitrue.conf"
+[2026-08-06T21:47:00.809Z] - 7.6.53.3.3.5 - INFO: '/UNITY_PATH/Unity/windows/scm/plastic/PlasticSCM-11.0.16.8798/client/cm.exe' update C:\\workspace\\workspace\\artifacts --silent --clientconf="BUILD_PATH/config\client.conf" --tokensconf="BUILD_PATH/config\tokens.conf" --cloudregionsconf="BUILD_PATH/config\cloudregionstrue.conf" --config-files="webapi.conf=BUILD_PATH/config\webapitrue.conf"
+[2026-08-06T21:47:03.172Z] - 7.6.53.3.3.5 - INFO: SCM Checkout with credentials completed in 14 seconds.
+[2026-08-06T21:47:03.173Z] - 7.6.53.3.3.5 - INFO: No files were added to be checked in therefore the check-in operation will not be performed
+[2026-08-06T21:47:03.173Z] - 7.6.53.3.3.5 - INFO: Zipping cache files from Library using compression level 1
+[2026-08-06T21:47:03.445Z] - 7.6.53.3.3.5 - INFO: Created the archive file in 0.2718255 seconds.
+[2026-08-06T21:47:03.821Z] - 7.6.53.3.3.5 - DEBUG: done.
+[2026-08-06T21:47:04.124Z] - 7.6.53.3.3.5 - INFO: Setting the environment variable "PLASTIC_CM_CONFIG_DIRECTORY".
+ -V, --version   output version information and exit
+Using /home/buildbot/.rvm/gems/ruby-3.3.5
+Using /home/buildbot/.rvm/gems/ruby-3.3.5
+[2026-08-06T21:47:37.248Z] - 7.6.53.3.3.5 - DEBUG: /home/buildbot/.rvm/gems/ruby-3.3.5/gems/bvr-7.6.53.3.3.5/lib/utils/helpers.rb::apicall:: calling api method: post_buildattempts_postbuildsteps, args: ["18968031196257/7d6ce4e2-ba19-412e-9059-6ce7231aacb8", "castle-kingdom-season", "3", [{"name"=>"::Licensing.acquire_license", "messages"=>[], "duration"=>7962, "depth"=>0}, {"name"=>"::Licensing.acquire_license.token", "messages"=>[], "duration"=>7373, "depth"=>1}, {"name"=>"::SCM", "messages"=>[], "duration"=>23013, "depth"=>0}, {"name"=>"::SCM.checkout", "messages"=>[], "duration"=>20663, "depth"=>1}, {"name"=>"::SCM.post_checkout", "messages"=>[], "duration"=>1341, "depth"=>1}, {"name"=>"::Artifacts", "messages"=>[], "duration"=>1074, "depth"=>0}, {"name"=>"::Artifacts.download_cache", "messages"=>[], "duration"=>319, "depth"=>1}, {"name"=>"::Artifacts.extract_cache", "messages"=>[], "duration"=>364, "depth"=>1}, {"name"=>"bvr:buildjobs:builders:build_script", "messages"=>[], "duration"=>14877, "depth"=>0}, {"name"=>"bvr:buildjobs:builders:buildscript", "messages"=>[], "duration"=>11912, "depth"=>1}, {"name"=>"bvr:project:build", "messages"=>[], "duration"=>11912, "depth"=>2}, {"name"=>"::UnityCompiler.setup", "messages"=>[], "duration"=>1214, "depth"=>3}, {"name"=>"::UnityCompiler.remove_script_assemblies", "messages"=>[], "duration"=>1, "depth"=>3}, {"name"=>"::UnityCompiler.run_unit_tests", "messages"=>[], "duration"=>0, "depth"=>3}, {"name"=>"::UnityCompiler.run_build", "messages"=>[], "duration"=>10690, "depth"=>3}, {"name"=>"::UnityCompiler.unity_build", "messages"=>[], "duration"=>9675, "depth"=>4}, {"name"=>"::UnityCompiler.unity_build.save_config", "messages"=>[], "duration"=>2, "depth"=>5}, {"name"=>"::UnityCompiler.unity_build.execute_unity_build", "messages"=>[], "duration"=>8277, "depth"=>5}, {"name"=>"::UnityCompiler.unity_build.get_unity_log", "messages"=>[], "duration"=>158, "depth"=>5}, {"name"=>"::UnityCompiler.check_success", "messages"=>[], "duration"=>289, "depth"=>4}, {"name"=>"::Publish", "messages"=>[], "duration"=>17521, "depth"=>0}, {"name"=>"::Publish:prepare_upload", "messages"=>[], "duration"=>157, "depth"=>1}, {"name"=>"::Publish:setup_artifact_workspace", "messages"=>[], "duration"=>14982, "depth"=>1}, {"name"=>"::Publish.cache", "messages"=>[], "duration"=>649, "depth"=>1}, {"name"=>"::Publish.cache.pack_library", "messages"=>[], "duration"=>272, "depth"=>2}, {"name"=>"::Publish.cache.store_library", "messages"=...
+[2026-08-06T21:47:37.933Z] - 7.6.53.3.3.5 - INFO: postbuildsteps finished successfully
+[2026-08-06T21:48:01.016Z] - 7.6.53.3.3.5 - INFO: postbuildstatus finished successfully.
+Build step 'Execute scripts' changed build result to FAILURE
+Build step 'Execute scripts' marked build as failure
+[error] Finished: FAILURE
