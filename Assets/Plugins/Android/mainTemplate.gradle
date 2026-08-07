@@ -4,8 +4,15 @@
 
 apply plugin: 'com.android.library'
 
+def libsJars = fileTree(dir: 'libs', include: ['*.jar']).matching {
+    // Exclude the old unity-plugin-library.jar to avoid duplicate class conflicts with
+    // com.google.android.gms:play-services-ads dependency included below.
+    exclude 'unity-plugin-library.jar'
+}
+
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    // include all jars in libs except the excluded ones
+    implementation libsJars
 
     // Google Mobile Ads
     implementation 'com.google.android.gms:play-services-ads:23.2.0'
