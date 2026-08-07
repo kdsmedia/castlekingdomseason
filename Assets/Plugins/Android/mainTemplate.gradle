@@ -4,12 +4,6 @@
 
 apply plugin: 'com.android.library'
 
-def libsJars = fileTree(dir: 'libs', include: ['*.jar']).matching {
-    // Exclude the old unity-plugin-library.jar to avoid duplicate class conflicts with
-    // com.google.android.gms:play-services-ads dependency included below.
-    exclude 'unity-plugin-library.jar'
-}
-
 // Force specific dependency versions and avoid transitive duplicate-class conflicts
 configurations.all {
     resolutionStrategy {
@@ -19,10 +13,9 @@ configurations.all {
 }
 
 dependencies {
-    // By default we DO NOT auto-include local jars from libs/ to avoid duplicate-class conflicts
-    // If you must include a local jar, add it explicitly here, for example:
+    // Local jars from libs/ are not auto-included to avoid duplicate-class conflicts
+    // with the play-services-ads artifact below. Add any required jar explicitly, e.g.:
     // implementation files('libs/some-local-lib.jar')
-    // implementation libsJars
 
     // Google Mobile Ads
     implementation 'com.google.android.gms:play-services-ads:23.2.0'
@@ -34,10 +27,8 @@ dependencies {
 }
 
 android {
-    namespace "**APPLICATIONID**"
-
     compileSdkVersion **APIVERSION**
-    buildToolsVersion "**BUILDTOOLS**"
+    buildToolsVersion '**BUILDTOOLS**'
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_11
@@ -48,13 +39,13 @@ android {
         minSdkVersion **MINSDKVERSION**
         targetSdkVersion **TARGETSDKVERSION**
         versionCode **VERSIONCODE**
-        versionName "**VERSIONNAME**"
+        versionName '**VERSIONNAME**'
 
         ndk {
             abiFilters **ABIFILTERS**
         }
 
-        consumerProguardFiles 'proguard-unity.txt' **USER_PROGUARD**
+        consumerProguardFiles 'proguard-unity.txt'**USER_PROGUARD**
     }
 
     lintOptions {
@@ -66,11 +57,10 @@ android {
         ignoreAssetsPattern = "!.svn:!.git:!.ds_store:!*.scc:.*:!CVS:!thumbs.db:!picasa.ini:!*~"
     }
 
-    // Packaging options to reduce duplicate META-INF and transitive metadata conflicts
+    // Keep first matching META-INF resources and drop transitive metadata that
+    // conflicts when several AARs ship the same files.
     packagingOptions {
-        // Keep first matching META-INF resources (helps when multiple AARs include similar files)
         pickFirst 'META-INF/**'
-        // Exclude some common transitive metadata files that can cause merge warnings
         exclude 'META-INF/DEPENDENCIES'
         exclude 'META-INF/LICENSE'
         exclude 'META-INF/LICENSE.txt'
@@ -78,25 +68,19 @@ android {
         exclude 'META-INF/NOTICE.txt'
     }
 
-    **PACKAGING_OPTIONS**
-
     buildTypes {
         debug {
             minifyEnabled **MINIFY_DEBUG**
-            useProguard **PROGUARD_DEBUG**
-            proguardFiles getDefaultProguardFile('proguard-android.txt') **SIGNCONFIG**
+            proguardFiles getDefaultProguardFile('proguard-android.txt')
         }
 
         release {
-            minSdkVersion **MINSDKVERSION**
             minifyEnabled **MINIFY_RELEASE**
-            useProguard **PROGUARD_RELEASE**
-            proguardFiles getDefaultProguardFile('proguard-android.txt') **SIGNCONFIG**
+            proguardFiles getDefaultProguardFile('proguard-android.txt')
         }
     }
 
-    **SIGN**
-
+    **PACKAGING_OPTIONS**
     **SPLITS**
     **EXTERNAL_SOURCES**
 }
