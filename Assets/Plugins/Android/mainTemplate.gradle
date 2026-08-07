@@ -2,30 +2,25 @@
 
 **APPLY_PLUGINS**
 
-buildscript {
-    repositories {
-        google()
-        mavenCentral()
-    }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:7.4.2'
-    }
-}
-
-allprojects {
-    repositories {
-        google()
-        mavenCentral()
-        flatDir {
-            dirs 'libs'
-        }
-    }
-}
-
 apply plugin: 'com.android.library'
 
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    // Google Mobile Ads
+    implementation 'com.google.android.gms:play-services-ads:23.2.0'
+
+    // Unity Ads
+    implementation 'com.unity3d.ads:unity-ads:4.12.1'
+
+    **DEPS**
+}
+
 android {
+    namespace "**APPLICATIONID**"
+
     compileSdkVersion **APIVERSION**
+    buildToolsVersion "**BUILDTOOLS**"
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_11
@@ -35,13 +30,12 @@ android {
     defaultConfig {
         minSdkVersion **MINSDKVERSION**
         targetSdkVersion **TARGETSDKVERSION**
+        versionCode **VERSIONCODE**
+        versionName "**VERSIONNAME**"
 
         ndk {
             abiFilters **ABIFILTERS**
         }
-
-        versionCode **VERSIONCODE**
-        versionName "**VERSIONNAME**"
 
         consumerProguardFiles 'proguard-unity.txt' **USER_PROGUARD**
     }
@@ -55,19 +49,24 @@ android {
         ignoreAssetsPattern = "!.svn:!.git:!.ds_store:!*.scc:.*:!CVS:!thumbs.db:!picasa.ini:!*~"
     }
 
+    **PACKAGING_OPTIONS**
+
+    buildTypes {
+        debug {
+            minifyEnabled **MINIFY_DEBUG**
+            useProguard **PROGUARD_DEBUG**
+            proguardFiles getDefaultProguardFile('proguard-android.txt') **SIGNCONFIG**
+        }
+
+        release {
+            minifyEnabled **MINIFY_RELEASE**
+            useProguard **PROGUARD_RELEASE**
+            proguardFiles getDefaultProguardFile('proguard-android.txt') **SIGNCONFIG**
+        }
+    }
+
     **SIGN**
 
-    **PACKAGING_OPTIONS**
-}
-
-dependencies {
-    implementation fileTree(dir: "libs", include: ["*.jar"])
-
-    // Google Mobile Ads SDK
-    implementation 'com.google.android.gms:play-services-ads:23.2.0'
-
-    // Unity Ads SDK
-    implementation 'com.unity3d.ads:unity-ads:4.12.1'
-
-    **DEPS**
+    **SPLITS**
+    **EXTERNAL_SOURCES**
 }
