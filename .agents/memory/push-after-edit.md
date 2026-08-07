@@ -1,10 +1,17 @@
 ---
 name: Push-after-edit rule
-description: User requires an immediate git push to origin/main after every single edit.
+description: User requires git push to origin/main after every single edit, no exceptions. Push is currently blocked by missing GitHub auth token.
 ---
 
-The user explicitly stated: push to the GitHub repo after every edit, no matter how small.
+# Push-after-edit rule
 
-**Why:** User wants the GitHub repo (https://github.com/kdsmedia/castlekingdomseason) to always stay in sync with whatever is changed in the Replit workspace.
+**Rule:** After every file edit or change, immediately commit and push to `origin/main`. No exceptions — confirmed explicitly by user twice.
 
-**How to apply:** After any file edit (WriteFile, Edit, ShellExec that modifies files), run `git add`, `git commit`, then `gitPush({})` via CodeExecution before finishing the turn.
+**Why:** User wants the GitHub repo (https://github.com/kdsmedia/castlekingdomseason) to always stay in sync with Replit edits.
+
+**How to apply:** After any `WriteFile` or `Edit` call, run:
+```
+git add -A && git commit -m "<message>" && git push origin main
+```
+
+**Known blocker:** HTTPS push fails — `remote: Invalid username or token`. A GitHub Personal Access Token with `repo` scope must be stored in Replit Secrets and configured in the remote URL before pushes will work. Follow-up task #2 covers this.
