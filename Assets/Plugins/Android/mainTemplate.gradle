@@ -4,17 +4,21 @@
 
 apply plugin: 'com.android.library'
 
-// Collect all .jar files in the project recursively, but explicitly exclude
-// the legacy unity-plugin-library.jar which duplicates classes provided by
-// the Play Services dependency and causes duplicate-class / dex conflicts.
-// Using a recursive fileTree ensures we still pick up jars placed in subfolders
-// while reliably excluding the problematic jar.
-def libsJars = fileTree(dir: '.', include: ['**/*.jar']).matching {
+// Collect jars from libs but explicitly exclude the old unity-plugin-library.jar to avoid duplicate classes
+def libsJars = fileTree(dir: 'libs', include: ['*.jar']).matching {
+    // Exclude the old unity-plugin-library.jar to avoid duplicate class conflicts with
+    // com.google.android.gms:play-services-ads dependency included below.
     exclude '**/unity-plugin-library.jar'
 }
 
+// Force resolution and a few packaging rules to reduce duplicate-file/dex merge problems
+configurations.all {
+    // Force play-services-ads to the version we explicitly depend on to avoid mixed versions
+    resolutionStrategy.force 'com.google.android.gms:play-services-ads:23.2.0'
+}
+
 dependencies {
-    // include all jars found (except excluded ones)
+    // include all jars in libs except the excluded ones
     implementation libsJars
 
     // Google Mobile Ads
@@ -57,6 +61,18 @@ android {
     aaptOptions {
         noCompress = ['.unity3d', '.ress', '.resource', '.obb'] + unityStreamingAssets.tokenize(', ')
         ignoreAssetsPattern = "!.svn:!.git:!.ds_store:!*.scc:.*:!CVS:!thumbs.db:!picasa.ini:!*~"
+    }
+
+    // Packaging options to reduce duplicate META-INF and other merge conflicts from transitive deps
+    packagingOptions {
+        // Common metadata files that often collide between dependencies
+        pickFirst 'META-INF/LICENSE'
+        pickFirst 'META-INF/LICENSE.txt'
+        pickFirst 'META-INF/NOTICE'
+        pickFirst 'META-INF/NOTICE.txt'
+        pickFirst 'META-INF/ASL2.0'
+        pickFirst 'META-INF/*.kotlin_module'
+        exclude 'META-INF/DEPENDENCIES'
     }
 
     **PACKAGING_OPTIONS**
