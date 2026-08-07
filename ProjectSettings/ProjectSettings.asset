@@ -113,6 +113,7 @@ PlayerSettings:
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 26
   AndroidTargetSdkVersion: 35
+  AndroidTargetArchitectures: 3
   AndroidMaxAspectRatio: 2.1
   androidInstallLocation: 0
   aotOptions:
@@ -288,7 +289,8 @@ PlayerSettings:
   noHistoryForGroupVersion: 0
   m_HmiTarget: 0
   additionalIl2CppArgs:
-  scriptingBackend: {}
+  scriptingBackend:
+    Android: 1
   il2cppCompilerConfiguration: {}
   il2cppCodeGeneration: {}
   il2cppNullChecks: 1
@@ -359,6 +361,7 @@ PlayerSettings:
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 26
   AndroidTargetSdkVersion: 35
+  AndroidTargetArchitectures: 3
   bundleVersion: 1.0
   preloadedAssets: []
   metroInputSource: 0
