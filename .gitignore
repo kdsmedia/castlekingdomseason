@@ -30,3 +30,7 @@ Thumbs.db
 # Allow only the scoped CastleKingdomSeason google-services file
 google-services*.json
 !Assets/google-services.json
+
+# Ignore keystore and CI build logs
+*.keystore
+18968031196257-castle-kingdom-season*.log*

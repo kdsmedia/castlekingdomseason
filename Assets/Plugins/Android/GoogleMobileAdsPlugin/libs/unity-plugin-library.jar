@@ -1,6 +1,7 @@
-// Note: this file is a placeholder committing a deletion notice in place of the binary .jar to avoid storing large binaries in the repo history.
-REMOVED: unity-plugin-library.jar
+REMOVED: The embedded binary jar previously stored here (unity-plugin-library.jar) has been removed from the repository for build-safety reasons.
 
-This file was removed (replaced with this notice) to prevent duplicate-class / dex conflicts with the Play Services dependency (com.google.android.gms:play-services-ads).
+Reason:
+- This project uses Gradle-managed Google Play services (com.google.android.gms:play-services-ads).
+- The original unity-plugin-library.jar contained classes that duplicate those provided by the Gradle dependency and caused "Duplicate class" build errors during Gradle packaging.
 
-If you need the original JAR back, restore it from a local backup or an earlier commit, but note that the project now relies on the Maven Play Services dependency instead of the bundled JAR.
+If you need the original JAR back, retrieve it from your local backup or restore it from a previous commit.
