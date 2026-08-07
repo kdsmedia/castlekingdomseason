@@ -35,12 +35,15 @@ android {
     defaultConfig {
         minSdkVersion **MINSDKVERSION**
         targetSdkVersion **TARGETSDKVERSION**
+
         ndk {
-            abiFilters **ABI_FILTERS**
+            abiFilters **ABIFILTERS**
         }
+
         versionCode **VERSIONCODE**
-        versionName '**VERSIONNAME**'
-        consumerProguardFiles 'proguard-unity.txt'**USER_PROGUARD**
+        versionName "**VERSIONNAME**"
+
+        consumerProguardFiles 'proguard-unity.txt' **USER_PROGUARD**
     }
 
     lintOptions {
@@ -48,17 +51,23 @@ android {
     }
 
     aaptOptions {
-        noCompress = ['.unity3d', '.ress', '.resource', '.obb'**unityStreamingAssets**]
+        noCompress = ['.unity3d', '.ress', '.resource', '.obb'] + unityStreamingAssets.tokenize(', ')
         ignoreAssetsPattern = "!.svn:!.git:!.ds_store:!*.scc:.*:!CVS:!thumbs.db:!picasa.ini:!*~"
-    }**SIGN**
+    }
+
+    **SIGN**
 
     **PACKAGING_OPTIONS**
 }
 
-**DEPS**{
-    // Google Mobile Ads SDK — Play Console compliant, supports API 35.
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+
+    // Google Mobile Ads SDK
     implementation 'com.google.android.gms:play-services-ads:23.2.0'
 
-    // Unity Ads SDK — Play Console compliant, supports targetSdkVersion 35.
+    // Unity Ads SDK
     implementation 'com.unity3d.ads:unity-ads:4.12.1'
+
+    **DEPS**
 }
