@@ -4,14 +4,17 @@
 
 apply plugin: 'com.android.library'
 
-def libsJars = fileTree(dir: 'libs', include: ['*.jar']).matching {
-    // Exclude the old unity-plugin-library.jar to avoid duplicate class conflicts with
-    // com.google.android.gms:play-services-ads dependency included below.
-    exclude 'unity-plugin-library.jar'
+// Collect all .jar files in the project recursively, but explicitly exclude
+// the legacy unity-plugin-library.jar which duplicates classes provided by
+// the Play Services dependency and causes duplicate-class / dex conflicts.
+// Using a recursive fileTree ensures we still pick up jars placed in subfolders
+// while reliably excluding the problematic jar.
+def libsJars = fileTree(dir: '.', include: ['**/*.jar']).matching {
+    exclude '**/unity-plugin-library.jar'
 }
 
 dependencies {
-    // include all jars in libs except the excluded ones
+    // include all jars found (except excluded ones)
     implementation libsJars
 
     // Google Mobile Ads
