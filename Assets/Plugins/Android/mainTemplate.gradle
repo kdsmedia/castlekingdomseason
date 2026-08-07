@@ -66,6 +66,7 @@ android {
         }
 
         release {
+            minSdkVersion **MINSDKVERSION**
             minifyEnabled **MINIFY_RELEASE**
             useProguard **PROGUARD_RELEASE**
             proguardFiles getDefaultProguardFile('proguard-android.txt') **SIGNCONFIG**
