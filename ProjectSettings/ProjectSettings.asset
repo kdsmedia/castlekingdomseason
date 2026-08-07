@@ -112,7 +112,7 @@ PlayerSettings:
     tvOS: 0
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 26
-  AndroidTargetSdkVersion: 33
+  AndroidTargetSdkVersion: 35
   AndroidMaxAspectRatio: 2.1
   androidInstallLocation: 0
   aotOptions:
@@ -358,7 +358,7 @@ PlayerSettings:
     Android: com.altomedia.castlekingdomseason
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 26
-  AndroidTargetSdkVersion: 33
+  AndroidTargetSdkVersion: 35
   bundleVersion: 1.0
   preloadedAssets: []
   metroInputSource: 0

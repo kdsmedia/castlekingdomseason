@@ -18,7 +18,7 @@ A medieval tower defense mobile game for Android by **ALTOMEDIA**.
 
 Castle Kingdom Season is a tower defense game where players defend a castle against waves of enemies across seasonal maps (forest, tundra, desert, swamp). Features archer/cannon/mage/lightning towers, multiple enemy types, and 3-star level scoring.
 
-**Monetization:** Google AdMob / Unity Ads (optional rewarded ads)  
+**Monetization:** Unity Ads (interstitial + optional rewarded ads)  
 **Connectivity:** Offline capable
 
 ## User Preferences

@@ -85,7 +85,7 @@ We use the information we collect for the following purposes:
 3.3 Advertising
    - To display advertisements within the Game (banner ads, interstitial ads, and rewarded video ads)
    - To measure advertising effectiveness and campaign performance
-   - To provide personalized or context-based advertisements through our advertising partners, including Google AdMob and Unity Ads
+   - To provide personalized or context-based advertisements through our advertising partner, Unity Ads
    - To comply with advertising partner requirements and policies
 
 3.4 Customer Support
@@ -103,25 +103,19 @@ We use the information we collect for the following purposes:
 
 Castle Kingdom Season integrates the following third-party services and SDKs, each of which may independently collect and process data according to their own privacy policies:
 
-4.1 Google AdMob
-   - Purpose: Display advertisements (banner, interstitial, rewarded video)
-   - Data Collected: Advertising ID, device info, app usage data, IP address
-   - Privacy Policy: https://policies.google.com/privacy
-   - Opt-Out: You can opt out of personalized ads in your Android device settings under Google > Ads > Opt out of Ads Personalization
-
-4.2 Google Firebase
+4.1 Google Firebase
    - Purpose: Analytics, crash reporting (Firebase Crashlytics), remote configuration, and dynamic links
    - Data Collected: Anonymous usage events, crash reports, device identifiers
    - Privacy Policy: https://firebase.google.com/support/privacy
    - Data Retention: Firebase Analytics data is retained for 14 months by default
 
-4.3 Unity Ads
-   - Purpose: Rewarded video advertisements
+4.2 Unity Ads
+   - Purpose: Interstitial and rewarded video advertisements
    - Data Collected: Advertising ID, device info, ad interaction data
    - Privacy Policy: https://unity.com/legal/privacy-policy
    - Opt-Out: https://unity.com/legal/privacy-policy#your-privacy-rights
 
-4.4 Google Play Services
+4.3 Google Play Services
    - Purpose: App distribution, licensing, and Play Games integration
    - Data Collected: Google account identifiers (if Play Games is used), device info
    - Privacy Policy: https://policies.google.com/privacy
@@ -160,7 +154,7 @@ We retain data for as long as necessary to fulfill the purposes described in thi
 - Analytics data: Retained in Firebase for 14 months; anonymized aggregate data may be retained indefinitely
 - Crash reports: Retained for 90 days in Firebase Crashlytics
 - Customer support emails: Retained for up to 3 years from the date of last interaction
-- Advertising data: Subject to the retention policies of Google AdMob and Unity Ads
+- Advertising data: Subject to the retention policies of Unity Ads
 
 When data is no longer needed, we take reasonable steps to ensure it is deleted or anonymized.
 

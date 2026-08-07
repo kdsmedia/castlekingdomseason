@@ -122,7 +122,7 @@ Langkah 9 — Formulir Data Safety
        ✅ Identifikasi perangkat (Advertising ID)
        ✅ Aktivitas dalam aplikasi (gameplay events)
        ✅ Info aplikasi dan kinerja (crash logs)
-    4. Apakah data dibagikan dengan pihak ketiga? YA (Google AdMob, Unity Ads, Firebase)
+    4. Apakah data dibagikan dengan pihak ketiga? YA (Unity Ads, Firebase)
     5. Apakah data dienkripsi dalam transit? YA
     6. Dapatkah pengguna meminta penghapusan data? YA
     7. Klik [Simpan]

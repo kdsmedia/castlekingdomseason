@@ -4,29 +4,16 @@
 
 apply plugin: 'com.android.library'
 
-// Force specific dependency versions and avoid transitive duplicate-class conflicts
-configurations.all {
-    resolutionStrategy {
-        // Force the same version of play-services-ads to prevent mixed-version issues
-        force 'com.google.android.gms:play-services-ads:23.2.0'
-    }
-}
-
 dependencies {
-    // Local jars from libs/ are not auto-included to avoid duplicate-class conflicts
-    // with the play-services-ads artifact below. Add any required jar explicitly, e.g.:
-    // implementation files('libs/some-local-lib.jar')
-
-    // Google Mobile Ads
-    implementation 'com.google.android.gms:play-services-ads:23.2.0'
-
-    // Unity Ads
+    // Unity Ads native SDK, matching the C# API in Assets/UnityAds
     implementation 'com.unity3d.ads:unity-ads:4.12.1'
 
     **DEPS**
 }
 
 android {
+    ndkPath "**NDKPATH**"
+
     compileSdkVersion **APIVERSION**
     buildToolsVersion '**BUILDTOOLS**'
 

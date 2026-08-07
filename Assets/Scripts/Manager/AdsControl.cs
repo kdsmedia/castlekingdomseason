@@ -1,15 +1,11 @@
 using UnityEngine;
-using System.Collections;
-using System;
-using UnityEngine.SocialPlatforms;
-using GoogleMobileAds.Api;
 using UnityEngine.Advertisements;
 
 /// <summary>
-/// Manages Unity Ads (rewarded video) and AdMob (interstitial) ad display.
-/// Updated for Unity Ads 4.x API: uses IUnityAdsInitializationListener,
-/// IUnityAdsLoadListener, and IUnityAdsShowListener instead of the
-/// deprecated ShowOptions / resultCallback pattern.
+/// Manages interstitial and rewarded video ads through Unity Ads 4.x.
+/// Uses IUnityAdsInitializationListener, IUnityAdsLoadListener and
+/// IUnityAdsShowListener instead of the deprecated ShowOptions / resultCallback
+/// pattern.
 /// </summary>
 public class AdsControl : MonoBehaviour,
     IUnityAdsInitializationListener,
@@ -20,29 +16,23 @@ public class AdsControl : MonoBehaviour,
 
     private static AdsControl _instance;
 
-    InterstitialAd interstitial;
-
-    // Ad unit IDs — configured for ALTOMEDIA / CastleKingdomSeason
-    private const string ADMOB_INTERSTITIAL_ANDROID = "ca-app-pub-6881903056221433/1893694801";
-    private const string ADMOB_INTERSTITIAL_IOS     = "ca-app-pub-6881903056221433/1893694801";
-    private const string ADMOB_REWARD_ANDROID       = "ca-app-pub-6881903056221433/2929896144";
-    private const string UNITY_GAME_ID_ANDROID      = "6170475";
-    private const string UNITY_GAME_ID_IOS          = "6170475";
-    private const string UNITY_REWARDED_PLACEMENT   = "rewardedVideo";
+    // Unity Ads configuration for ALTOMEDIA / CastleKingdomSeason
+    private const string UNITY_GAME_ID_ANDROID        = "6170475";
+    private const string UNITY_GAME_ID_IOS            = "6170475";
+    private const string UNITY_REWARDED_PLACEMENT     = "rewardedVideo";
+    private const string UNITY_INTERSTITIAL_PLACEMENT = "Interstitial_Android";
 
     // Legacy serialized fields kept for inspector compatibility
     public string AdmobID_Android, AdmobID_IOS, UnityID_Android, UnityID_IOS, UnityZoneID;
 
-    // Tracks whether a rewarded ad has been loaded and is ready to show
+    // Tracks whether each placement is loaded and ready to show
     private bool _rewardedLoaded = false;
+    private bool _interstitialLoaded = false;
 
     public static AdsControl Instance { get { return _instance; } }
 
     void Awake()
     {
-        // Override serialized values with hardcoded constants
-        AdmobID_Android = ADMOB_INTERSTITIAL_ANDROID;
-        AdmobID_IOS     = ADMOB_INTERSTITIAL_IOS;
         UnityID_Android = UNITY_GAME_ID_ANDROID;
         UnityID_IOS     = UNITY_GAME_ID_IOS;
         UnityZoneID     = UNITY_REWARDED_PLACEMENT;
@@ -53,10 +43,8 @@ public class AdsControl : MonoBehaviour,
         }
 
         _instance = this;
-        MakeNewInterstial();
         DontDestroyOnLoad(gameObject);
 
-        // Initialize Unity Ads 4.x
         if (Advertisement.isSupported) {
 #if UNITY_IOS
             Advertisement.Initialize(UnityID_IOS, false, this);
@@ -66,42 +54,14 @@ public class AdsControl : MonoBehaviour,
         }
     }
 
-    // ─── AdMob interstitial ───────────────────────────────────────────────
-
-    public void HandleInterstialAdClosed(object sender, EventArgs args)
-    {
-        if (interstitial != null)
-            interstitial.Destroy();
-        MakeNewInterstial();
-    }
-
-    void MakeNewInterstial()
-    {
-#if UNITY_ANDROID
-        interstitial = new InterstitialAd(AdmobID_Android);
-#elif UNITY_IOS || UNITY_IPHONE
-        interstitial = new InterstitialAd(AdmobID_IOS);
-#endif
-        if (interstitial != null) {
-            interstitial.OnAdClosed += HandleInterstialAdClosed;
-            AdRequest request = new AdRequest.Builder().Build();
-            interstitial.LoadAd(request);
-        }
-    }
-
-    public void showAds()
-    {
-        if (interstitial != null)
-            interstitial.Show();
-    }
-
-    // ─── Unity Ads 4.x — rewarded video ──────────────────────────────────
+    // ─── Initialization ──────────────────────────────────────────────────
 
     /// <summary>Called by Unity Ads when initialization completes successfully.</summary>
     public void OnInitializationComplete()
     {
         Debug.Log("AdsControl: Unity Ads initialized.");
         LoadRewardedAd();
+        LoadInterstitialAd();
     }
 
     /// <summary>Called by Unity Ads when initialization fails.</summary>
@@ -110,26 +70,51 @@ public class AdsControl : MonoBehaviour,
         Debug.LogWarning("AdsControl: Unity Ads init failed — " + error + ": " + message);
     }
 
+    // ─── Loading ─────────────────────────────────────────────────────────
+
     private void LoadRewardedAd()
     {
         _rewardedLoaded = false;
         Advertisement.Load(UNITY_REWARDED_PLACEMENT, this);
     }
 
+    private void LoadInterstitialAd()
+    {
+        _interstitialLoaded = false;
+        Advertisement.Load(UNITY_INTERSTITIAL_PLACEMENT, this);
+    }
+
     /// <summary>Called by Unity Ads when a placement finishes loading.</summary>
     public void OnUnityAdsAdLoaded(string placementId)
     {
-        if (placementId == UNITY_REWARDED_PLACEMENT) {
-            Debug.Log("AdsControl: rewarded ad loaded.");
+        Debug.Log("AdsControl: ad loaded — " + placementId);
+
+        if (placementId == UNITY_REWARDED_PLACEMENT)
             _rewardedLoaded = true;
-        }
+        else if (placementId == UNITY_INTERSTITIAL_PLACEMENT)
+            _interstitialLoaded = true;
     }
 
     /// <summary>Called by Unity Ads when a placement fails to load.</summary>
     public void OnUnityAdsFailedToLoad(string placementId, UnityAdsLoadError error, string message)
     {
         Debug.LogWarning("AdsControl: failed to load " + placementId + " — " + error + ": " + message);
-        _rewardedLoaded = false;
+
+        if (placementId == UNITY_REWARDED_PLACEMENT)
+            _rewardedLoaded = false;
+        else if (placementId == UNITY_INTERSTITIAL_PLACEMENT)
+            _interstitialLoaded = false;
+    }
+
+    // ─── Showing ─────────────────────────────────────────────────────────
+
+    /// <summary>Shows an interstitial between levels, if one is ready.</summary>
+    public void showAds()
+    {
+        if (_interstitialLoaded)
+            Advertisement.Show(UNITY_INTERSTITIAL_PLACEMENT, this);
+        else
+            LoadInterstitialAd();
     }
 
     /// <returns>True if a rewarded ad is loaded and ready to show.</returns>
@@ -152,8 +137,11 @@ public class AdsControl : MonoBehaviour,
     public void OnUnityAdsShowFailure(string placementId, UnityAdsShowError error, string message)
     {
         Debug.LogWarning("AdsControl: show failed — " + error + ": " + message);
-        _rewardedLoaded = false;
-        LoadRewardedAd();
+
+        if (placementId == UNITY_INTERSTITIAL_PLACEMENT)
+            LoadInterstitialAd();
+        else
+            LoadRewardedAd();
     }
 
     public void OnUnityAdsShowStart(string placementId)
@@ -168,6 +156,11 @@ public class AdsControl : MonoBehaviour,
 
     public void OnUnityAdsShowComplete(string placementId, UnityAdsShowCompletionState showCompletionState)
     {
+        if (placementId == UNITY_INTERSTITIAL_PLACEMENT) {
+            LoadInterstitialAd();
+            return;
+        }
+
         _rewardedLoaded = false;
 
         if (placementId == UNITY_REWARDED_PLACEMENT
@@ -179,7 +172,6 @@ public class AdsControl : MonoBehaviour,
             Debug.Log("AdsControl: ad " + showCompletionState + " — no reward granted.");
         }
 
-        // Pre-load the next ad
         LoadRewardedAd();
     }
 

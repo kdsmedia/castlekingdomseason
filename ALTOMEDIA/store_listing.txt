@@ -90,7 +90,7 @@ Privacy Policy: https://github.com/kdsmedia/castlekingdomseason (or hosted URL)
 
 ▌ IN-APP PURCHASES (Data Safety section)
 Does the app collect data? YES
-Does the app share data? YES (advertising partners: AdMob, Unity Ads)
+Does the app share data? YES (advertising partner: Unity Ads)
 Is data encrypted in transit? YES
 Can users request data deletion? YES — email altomediaindonesia@gmail.com
 

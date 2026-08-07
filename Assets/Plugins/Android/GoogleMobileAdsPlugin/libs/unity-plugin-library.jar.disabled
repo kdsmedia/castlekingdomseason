@@ -1,3 +1,0 @@
-REMOVED: unity-plugin-library.jar has been disabled to avoid duplicate-class issues.
-
-If you need the original JAR back, restore it from a local backup or previous commit and ensure Gradle-managed dependencies don't duplicate its classes.

@@ -94,7 +94,7 @@ Email:           altomediaindonesia@gmail.com
 Kategori:        Games > Strategy
 Content Rating:  Everyone / Everyone 7+ (Semua Umur)
 Harga:           Gratis (Free)
-Monetisasi:      Iklan (Google AdMob, Unity Ads) — opsional rewarded ads
+Monetisasi:      Iklan (Unity Ads) — interstitial + opsional rewarded ads
 Koneksi:         Tidak wajib online (bisa offline)
 Keystore:        castlekingdom.keystore (di root repo)
 Key Alias:       castlekingdom
