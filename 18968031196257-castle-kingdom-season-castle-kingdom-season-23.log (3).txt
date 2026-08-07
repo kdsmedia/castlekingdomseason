@@ -1,3 +1,0 @@
-REMOVED: Build log removed from repository to reduce repo size and avoid storing build artifacts in source control.
-
-If you need this log for debugging, retrieve it from your CI provider (Unity Cloud Build) or from a local backup.
