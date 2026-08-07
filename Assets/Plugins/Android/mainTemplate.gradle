@@ -5,6 +5,9 @@
 apply plugin: 'com.android.library'
 
 dependencies {
+    // unity-classes.jar and any other plugin jars Unity places in unityLibrary/libs
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
     // Unity Ads native SDK, matching the C# API in Assets/UnityAds
     implementation 'com.unity3d.ads:unity-ads:4.12.1'
 
