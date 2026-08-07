@@ -19,8 +19,10 @@ configurations.all {
 }
 
 dependencies {
-    // include all jars in libs except the excluded ones
-    implementation libsJars
+    // By default we DO NOT auto-include local jars from libs/ to avoid duplicate-class conflicts
+    // If you must include a local jar, add it explicitly here, for example:
+    // implementation files('libs/some-local-lib.jar')
+    // implementation libsJars
 
     // Google Mobile Ads
     implementation 'com.google.android.gms:play-services-ads:23.2.0'

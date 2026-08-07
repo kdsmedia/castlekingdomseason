@@ -1,14 +1,3 @@
-This file is a placeholder indicating that the embedded unity-plugin-library.jar should not be used by the Android build.
+REMOVED: unity-plugin-library.jar has been disabled to avoid duplicate-class issues.
 
-Reason:
-- The project now uses Gradle-managed Google Play services (com.google.android.gms:play-services-ads). The embedded JAR `unity-plugin-library.jar` contains classes that duplicate those provided by the Gradle dependency and can cause "Duplicate class" errors during Gradle build (APK/AAR packaging).
-
-Action taken by maintainer/assistant:
-- Assets/Plugins/Android/mainTemplate.gradle has been updated to exclude `unity-plugin-library.jar` from the libs fileTree so it's not packaged by Gradle.
-
-Recommended final step (safe removal):
-- Remove the actual JAR from the repository to avoid any accidental usage in other parts of the pipeline:
-  git rm Assets/Plugins/Android/GoogleMobileAdsPlugin/libs/unity-plugin-library.jar
-  git commit -m "Remove embedded unity-plugin-library.jar to avoid duplicate classes with Gradle play-services-ads"
-
-If you prefer not to remove the file, you can keep this placeholder and rename the JAR locally (or on a branch) to `unity-plugin-library.jar.disabled` instead.
+If you need the original JAR back, restore it from a local backup or previous commit and ensure Gradle-managed dependencies don't duplicate its classes.
