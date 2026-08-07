@@ -4,17 +4,22 @@
 
 apply plugin: 'com.android.library'
 
-// Collect all .jar files in the project recursively, but explicitly exclude
-// the legacy unity-plugin-library.jar which duplicates classes provided by
-// the Play Services dependency and causes duplicate-class / dex conflicts.
-// Using a recursive fileTree ensures we still pick up jars placed in subfolders
-// while reliably excluding the problematic jar.
-def libsJars = fileTree(dir: '.', include: ['**/*.jar']).matching {
-    exclude '**/unity-plugin-library.jar'
+def libsJars = fileTree(dir: 'libs', include: ['*.jar']).matching {
+    // Exclude the old unity-plugin-library.jar to avoid duplicate class conflicts with
+    // com.google.android.gms:play-services-ads dependency included below.
+    exclude 'unity-plugin-library.jar'
+}
+
+// Force specific dependency versions and avoid transitive duplicate-class conflicts
+configurations.all {
+    resolutionStrategy {
+        // Force the same version of play-services-ads to prevent mixed-version issues
+        force 'com.google.android.gms:play-services-ads:23.2.0'
+    }
 }
 
 dependencies {
-    // include all jars found (except excluded ones)
+    // include all jars in libs except the excluded ones
     implementation libsJars
 
     // Google Mobile Ads
@@ -57,6 +62,18 @@ android {
     aaptOptions {
         noCompress = ['.unity3d', '.ress', '.resource', '.obb'] + unityStreamingAssets.tokenize(', ')
         ignoreAssetsPattern = "!.svn:!.git:!.ds_store:!*.scc:.*:!CVS:!thumbs.db:!picasa.ini:!*~"
+    }
+
+    // Packaging options to reduce duplicate META-INF and transitive metadata conflicts
+    packagingOptions {
+        // Keep first matching META-INF resources (helps when multiple AARs include similar files)
+        pickFirst 'META-INF/**'
+        // Exclude some common transitive metadata files that can cause merge warnings
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
     }
 
     **PACKAGING_OPTIONS**

@@ -31,6 +31,15 @@ Thumbs.db
 google-services*.json
 !Assets/google-services.json
 
-# Ignore keystore and CI build logs
+# Ignore local Android/iOS keystores and build logs
 *.keystore
-18968031196257-castle-kingdom-season*.log*
+*.jks
+*.keystore.properties
+*.log
+build-*.log
+*.zip
+
+# Ignore unity cache and local cloud build artifacts
+*.cache
+*.tmp
+*.bak
